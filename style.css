@@ -1,0 +1,120 @@
+:root {
+  --bg: #111;
+  --subtle: #1a1a1a;
+  --text: #eaeaea;
+  --accent: #00e0b0;      /* cyan */
+  --highlight: #ff4f8b;   /* magenta */
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--subtle);
+  color: var(--accent);
+  text-align: center;
+  padding: 1.2em 0;
+  border-bottom: 2px solid var(--accent);
+}
+
+nav {
+  margin-top: 0.5em;
+}
+
+nav a {
+  color: var(--text);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--highlight);
+}
+
+section {
+  padding: 2em;
+  max-width: 950px;
+  margin: 2em auto;
+  background: var(--subtle);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 79, 139, 0.15);
+}
+
+h2 {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+}
+
+a {
+  color: var(--highlight);
+}
+
+footer {
+  background: var(--subtle);
+  color: var(--text);
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+  border-top: 2px solid var(--accent);
+  font-size: 0.9em;
+}
+
+/* --- People cards --- */
+.person {
+  display: flex;
+  align-items: center;
+  background: #141414;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1.5em 0;
+  box-shadow: 0 0 12px rgba(0, 224, 176, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.person img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.5em;
+  border: 2px solid var(--accent);
+  transition: box-shadow 0.3s;
+}
+
+.person:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0, 224, 176, 0.3);
+}
+
+.person:hover img {
+  box-shadow: 0 0 12px var(--highlight);
+}
+
+/* --- Responsive layout --- */
+@media (max-width: 700px) {
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .person {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .person img {
+    margin: 0 0 1em 0;
+  }
+
+  section {
+    padding: 1.5em;
+  }
+}
