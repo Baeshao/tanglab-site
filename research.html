@@ -4,117 +4,134 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Tang Lab</title>
-  <meta name="description" content="Research areas in the Tang Laboratory including ZIKV, DENV, HCV, HCMV, metabolism, calcium signaling, and organoid models.">
+  <meta name="description" content="Research programs in virus-host interactions, flavivirus pathogenesis, innate antiviral defense, and CMV biology.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
-<body class="page-research">
-
-<header class="site-header" data-header>
-  <a class="site-name" href="index.html" aria-label="Tang Lab home">
-    <span class="site-name-main">Tang Lab</span>
-    <span class="site-name-sub">Howard University College of Medicine</span>
-  </a>
-  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>Menu</button>
-  <nav class="site-nav" data-site-nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="people.html">People</a>
-    <a href="publications.html">Publications</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-
-<section class="page-title">
-  <p class="eyebrow">Research</p>
-  <h1>Virus–host interactions across molecular, cellular, and organoid systems.</h1>
-  <p class="lead narrow">
-    The lab studies how viral infection changes host pathways that control metabolism, signaling, replication,
-    and cellular stress responses.
-  </p>
-</section>
-
-<section class="research-list">
-  <article class="research-item">
-    <span class="research-number">01</span>
-    <div>
-      <h2>Zika virus biology</h2>
-      <p>
-        Zika virus (ZIKV) projects examine how infection alters lipid metabolism, lipid droplet biology,
-        calcium signaling, and cellular function in two-dimensional cardiomyocyte cultures and three-dimensional cardiac organoid models.
-      </p>
-      <ul class="compact-list">
-        <li>Cardiomyocyte infection and host-cell remodeling</li>
-        <li>Lipid droplet depletion and fatty acid-linked pathways</li>
-        <li>Calcium imaging and organoid-level phenotypes</li>
-      </ul>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Tang Lab homepage">
+        <strong>Tang Lab</strong>
+        <span>Howard University College of Medicine</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+      <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </article>
+  </header>
 
-  <article class="research-item">
-    <span class="research-number">02</span>
-    <div>
-      <h2>Dengue virus and flavivirus comparison</h2>
-      <p>
-        Dengue virus (DENV) studies provide a comparative framework for understanding flavivirus replication,
-        host metabolic adaptation, and cellular responses that may overlap with or differ from ZIKV infection.
-      </p>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Research</p>
+        <h1>Research programs</h1>
+        <p class="lede">Tang Lab research centers on the molecular events that connect viral infection to host-cell dysfunction, immune responses, and disease.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="research-program" id="virus-host-interactions">
+          <div>
+            <p class="program-label">Program 01</p>
+            <h2>Virus–host interactions</h2>
+          </div>
+          <div>
+            <p>The lab studies how viral infection causes disease by changing host-cell pathways. Major themes include gene regulation, signal transduction, molecular virology, cell biology, and cellular innate defense.</p>
+            <ul class="method-list">
+              <li>Viral protein–host factor interactions</li>
+              <li>Host-cell transcriptional and post-translational control</li>
+              <li>Intrinsic and innate cellular antiviral defenses</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="research-program" id="flavivirus-pathogenesis">
+          <div>
+            <p class="program-label">Program 02</p>
+            <h2>ZIKV and DENV pathogenesis</h2>
+          </div>
+          <div>
+            <p>The flavivirus program examines how Zika virus (ZIKV) and dengue virus (DENV) interact with host cells. Current public research themes include ZIKV protein biology, neutralization systems, lipid droplets, ER stress, and cardiac or neural disease mechanisms.</p>
+            <ul class="method-list">
+              <li>Cell-culture infection models and protein-expression systems</li>
+              <li>Lipid-droplet and organelle-remodeling analysis</li>
+              <li>ZIKV cardiac and neonatal pathogenesis models</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="research-program" id="innate-defense">
+          <div>
+            <p class="program-label">Program 03</p>
+            <h2>Innate antiviral defense</h2>
+          </div>
+          <div>
+            <p>Lab publications and reviews address how pathogen-associated molecular patterns activate pattern-recognition receptors, type I interferon production, interferon-stimulated genes, and ISGylation during viral infection.</p>
+            <ul class="method-list">
+              <li>PAMP–PRR signaling and interferon response pathways</li>
+              <li>ISG expression and antiviral effector mechanisms</li>
+              <li>Host-targeted antiviral concepts</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="research-program" id="cmv-herpesvirus">
+          <div>
+            <p class="program-label">Program 04</p>
+            <h2>CMV and herpesvirus biology</h2>
+          </div>
+          <div>
+            <p>The lab has a long-standing interest in cytomegalovirus (CMV), ND10/PML biology, viral gene regulation, BAC engineering, and vector-based applications.</p>
+            <ul class="method-list">
+              <li>CMV immediate-early protein biology and host restriction factors</li>
+              <li>Viral bacterial artificial chromosome engineering</li>
+              <li>CMV-based vector and vaccine concepts</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="research-program" id="methods">
+          <div>
+            <p class="program-label">Approaches</p>
+            <h2>Experimental toolkit</h2>
+          </div>
+          <div>
+            <p>The lab integrates molecular virology and cellular methods with disease-focused models.</p>
+            <ul class="method-list">
+              <li>Molecular cloning and viral protein-expression systems</li>
+              <li>Quantitative PCR, western blotting, immunofluorescence, and subcellular analysis</li>
+              <li>Cell-culture infection assays, neutralization testing, and host-response readouts</li>
+              <li>Animal and organ-relevant models for viral pathogenesis questions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Tang Lab</strong>
+        <p>Department of Microbiology, Howard University College of Medicine</p>
+        <p class="small">© <span data-current-year></span> Tang Lab. Static site prepared for GitHub Pages.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-  </article>
-
-  <article class="research-item">
-    <span class="research-number">03</span>
-    <div>
-      <h2>Hepatitis C virus host-pathogen studies</h2>
-      <p>
-        Hepatitis C virus (HCV) projects focus on viral replication control, host response pathways, immune evasion,
-        and antiviral drug evaluation in mammalian cell systems.
-      </p>
-    </div>
-  </article>
-
-  <article class="research-item">
-    <span class="research-number">04</span>
-    <div>
-      <h2>Human cytomegalovirus engineering</h2>
-      <p>
-        Human cytomegalovirus (HCMV) work includes bacterial artificial chromosome (BAC)-based viral engineering,
-        viral gene regulation, and vector-oriented applications for mechanistic and translational studies.
-      </p>
-    </div>
-  </article>
-</section>
-
-<section class="card-section">
-  <div class="section-heading">
-    <p class="section-kicker">Approaches</p>
-    <h2>Methods used in the lab</h2>
-  </div>
-  <div class="method-grid">
-    <span>Cell culture</span>
-    <span>Organoid models</span>
-    <span>Quantitative PCR</span>
-    <span>Western blotting</span>
-    <span>Immunofluorescence</span>
-    <span>Subcellular fractionation</span>
-    <span>Metabolic assays</span>
-    <span>Calcium imaging</span>
-    <span>BAC manipulation</span>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div>
-    <strong>Tang Lab</strong><br>
-    Department of Microbiology, Howard University College of Medicine
-  </div>
-  <div class="footer-meta">
-    <span>Washington, DC</span>
-    <span>© <span data-year></span> Tang Lab</span>
-  </div>
-</footer>
-<script src="script.js"></script>
+  </footer>
 </body>
 </html>

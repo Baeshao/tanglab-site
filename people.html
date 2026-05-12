@@ -4,112 +4,171 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>People | Tang Lab</title>
-  <meta name="description" content="Members of the Tang Laboratory at Howard University College of Medicine.">
+  <meta name="description" content="Members and collaborators of Tang Lab at Howard University College of Medicine.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
-<body class="page-people">
-
-<header class="site-header" data-header>
-  <a class="site-name" href="index.html" aria-label="Tang Lab home">
-    <span class="site-name-main">Tang Lab</span>
-    <span class="site-name-sub">Howard University College of Medicine</span>
-  </a>
-  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>Menu</button>
-  <nav class="site-nav" data-site-nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="people.html">People</a>
-    <a href="publications.html">Publications</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-
-<section class="page-title">
-  <p class="eyebrow">People</p>
-  <h1>Members of the Tang Laboratory.</h1>
-  <p class="lead narrow">
-    The lab brings together trainees and collaborators working on molecular virology, host response biology,
-    viral metabolism, and disease-relevant cell models.
-  </p>
-</section>
-
-<section class="people-grid" aria-label="Tang Lab people">
-
-  <article class="person-card">
-    <img src="assets/avatar-qiyi.svg" alt="Qiyi Tang, Ph.D., M.D." loading="lazy">
-    <div class="person-body">
-      <p class="person-role">Principal Investigator</p>
-      <h2>Qiyi Tang, Ph.D., M.D.</h2>
-      <p>Professor, Department of Microbiology, Howard University College of Medicine. Leads research on virus–host interactions, viral gene regulation, and antiviral/vector development.</p>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Tang Lab homepage">
+        <strong>Tang Lab</strong>
+        <span>Howard University College of Medicine</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+      <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html" aria-current="page">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </article>
+  </header>
 
-  <article class="person-card">
-    <img src="assets/avatar-ruth.svg" alt="Ruth S. Cruz-Cosme" loading="lazy">
-    <div class="person-body">
-      <p class="person-role">Lab Manager</p>
-      <h2>Ruth S. Cruz-Cosme</h2>
-      <p>Supports virology, molecular biology, and cell culture projects across the laboratory, with major contributions to flavivirus-related research.</p>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">People</p>
+        <h1>Lab members and collaborators</h1>
+        <p class="lede">Tang Lab brings together faculty, research staff, and graduate researchers working across molecular virology, host response, and viral pathogenesis.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="notice">
+          <strong>Maintenance note:</strong> roles and profile links are based on publicly available university, LinkedIn, ResearchGate, and publication pages. Update this page when lab membership or titles change.
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Principal investigator</p>
+          <h2>Leadership</h2>
+        </div>
+        <div class="people-grid">
+          <article class="person-card">
+            <img src="assets/avatars/qiyi-tang.svg" alt="Initials placeholder for Qiyi Tang">
+            <div class="person-body">
+              <h3>Qiyi Tang, Ph.D., M.D.</h3>
+              <div class="role">Professor, Department of Microbiology</div>
+              <p>Dr. Tang leads research on virus–host interactions, molecular virology, gene regulation, signal transduction, and cellular innate defenses.</p>
+              <div class="person-links">
+                <a href="https://profiles.howard.edu/qiyi-tang">Howard profile</a>
+                <a href="https://scholar.google.com/citations?hl=en&user=xFoAj7cAAAAJ">Google Scholar</a>
+                <a href="https://www.researchgate.net/profile/Qiyi-Tang">ResearchGate</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Research staff and faculty collaborators</p>
+          <h2>Team</h2>
+        </div>
+        <div class="people-grid">
+          <article class="person-card">
+            <img src="assets/avatars/ruth-cruz-cosme.svg" alt="Initials placeholder for Ruth Cruz-Cosme">
+            <div class="person-body">
+              <h3>Ruth S. Cruz-Cosme, M.S.</h3>
+              <div class="role">Research technician and lab manager</div>
+              <p>Supports molecular virology, cell-culture, and flavivirus projects, with public coauthorship on ZIKV and lipid-droplet publications.</p>
+              <div class="person-links">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Ruth+Cruz-Cosme+Qiyi+Tang">PubMed</a>
+                <a href="https://www.researchgate.net/scientific-contributions/Ruth-Cruz-Cosme-2120864179">ResearchGate</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="person-card">
+            <img src="assets/avatars/najealicka-armstrong.svg" alt="Initials placeholder for Najealicka Armstrong">
+            <div class="person-body">
+              <h3>Najealicka Armstrong, Ph.D.</h3>
+              <div class="role">Assistant Professor and collaborator</div>
+              <p>Collaborates on ZIKV pathogenesis and viral disease studies, with public work spanning ZIKV biology and CMV neuropathogenesis.</p>
+              <div class="person-links">
+                <a href="https://smdp.icpdprograms.org/profile/?id=458">Profile</a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Najealicka+Armstrong+Qiyi+Tang">PubMed</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Graduate researchers</p>
+          <h2>Students</h2>
+        </div>
+        <div class="people-grid">
+          <article class="person-card">
+            <img src="assets/images/imaan-muhammad.jpg" alt="Portrait of Imaan Muhammad">
+            <div class="person-body">
+              <h3>Imaan Muhammad</h3>
+              <div class="role">Microbiology PhD candidate</div>
+              <p>Works on host antiviral responses and viral replication, including public scholarship on PAMP–PRR signaling, type I interferon, ISG expression, and ISGylation.</p>
+              <div class="person-links">
+                <a href="https://www.linkedin.com/in/imaan-muhammad">LinkedIn</a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Imaan+Muhammad+Qiyi+Tang">PubMed</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="person-card">
+            <img src="assets/avatars/kaci-craft.svg" alt="Initials placeholder for Kaci Craft">
+            <div class="person-body">
+              <h3>Kaci Craft</h3>
+              <div class="role">PhD student, Department of Microbiology</div>
+              <p>Contributes to virology projects at Howard University, including public work on humanized immune-system rodent models and flavivirus ER stress biology.</p>
+              <div class="person-links">
+                <a href="https://www.researchgate.net/profile/Kaci-Craft">ResearchGate</a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Kaci+Craft+Qiyi+Tang">PubMed</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="person-card">
+            <img src="assets/images/shaokai-pei.jpg" alt="Portrait of Shaokai Pei">
+            <div class="person-body">
+              <h3>Shaokai Pei</h3>
+              <div class="role">Biomedical Sciences PhD student</div>
+              <p>Works at the interface of virus–host interaction, lipid metabolism, viral vectors, and infection-associated neural or cardiac injury models.</p>
+              <div class="person-links">
+                <a href="https://www.researchgate.net/profile/Shaokai-Pei">ResearchGate</a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Shaokai+Pei+Qiyi+Tang">PubMed</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Tang Lab</strong>
+        <p>Department of Microbiology, Howard University College of Medicine</p>
+        <p class="small">© <span data-current-year></span> Tang Lab. Static site prepared for GitHub Pages.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-  </article>
-
-  <article class="person-card">
-    <img src="assets/avatar-najealicka.svg" alt="Najealicka Armstrong, Ph.D." loading="lazy">
-    <div class="person-body">
-      <p class="person-role">Assistant Professor and Collaborator</p>
-      <h2>Najealicka Armstrong, Ph.D.</h2>
-      <p>Collaborates with the Tang Lab on viral immunology, host response pathways, and infection-associated disease mechanisms.</p>
-    </div>
-  </article>
-
-  <article class="person-card">
-    <img src="assets/imaan.jpg" alt="Imaan Muhammad" loading="lazy">
-    <div class="person-body">
-      <p class="person-role">Ph.D. Candidate, Microbiology</p>
-      <h2>Imaan Muhammad</h2>
-      <p>Studies host responses and viral immune evasion in mammalian cell systems, with a focus on hepatitis C virus-related mechanisms.</p>
-    </div>
-  </article>
-
-  <article class="person-card">
-    <img src="assets/avatar-kaci.svg" alt="Kaci Craft" loading="lazy">
-    <div class="person-body">
-      <p class="person-role">Ph.D. Candidate, Microbiology</p>
-      <h2>Kaci Craft</h2>
-      <p>Investigates molecular mechanisms of viral replication, host-pathogen interactions, and viral protein-associated processes.</p>
-    </div>
-  </article>
-
-  <article class="person-card">
-    <img src="assets/shaokai.jpg" alt="Shaokai Pei" loading="lazy">
-    <div class="person-body">
-      <p class="person-role">Ph.D. Student, Biomedical Sciences</p>
-      <h2>Shaokai Pei</h2>
-      <p>Investigates ZIKV-driven cellular reprogramming using two-dimensional cardiomyocyte cultures and three-dimensional cardiac models.</p>
-    </div>
-  </article>
-</section>
-
-<section class="note-box">
-  <h2>Photo and profile updates</h2>
-  <p>
-    Placeholder portraits are used where formal headshots were not provided. Titles and descriptions can be revised as lab roles change.
-  </p>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div>
-    <strong>Tang Lab</strong><br>
-    Department of Microbiology, Howard University College of Medicine
-  </div>
-  <div class="footer-meta">
-    <span>Washington, DC</span>
-    <span>© <span data-year></span> Tang Lab</span>
-  </div>
-</footer>
-<script src="script.js"></script>
+  </footer>
 </body>
 </html>

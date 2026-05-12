@@ -1,33 +1,47 @@
-# Tang Lab Website Package — No Logo Version
+# Tang Lab Website
 
-This is a clean static website package for the Tang Laboratory. It is designed for direct upload to GitHub Pages or another static web host.
+Static website package for the Tang Laboratory at Howard University College of Medicine.
 
 ## Files
 
-- `index.html` — homepage
-- `research.html` — research areas and methods
-- `people.html` — lab member profiles
-- `publications.html` — publication links and manuscript-in-preparation section
-- `contact.html` — contact information
-- `style.css` — full site styling
-- `script.js` — mobile menu, active nav state, and dynamic year
-- `assets/` — portraits and initials-based placeholders
+```text
+index.html
+research.html
+people.html
+publications.html
+contact.html
+404.html
+style.css
+script.js
+.nojekyll
+assets/
+  favicon.svg
+  avatars/
+  images/
+SOURCE_NOTES.md
+```
 
-## Design choice
+## GitHub Pages upload
 
-This version intentionally removes the lab logo and uses a text-only academic header. The layout is original and conservative, closer to a clean university lab website than a brand-heavy design.
+1. Create or open the GitHub repository for the lab website.
+2. Upload all files and folders in this package to the repository root.
+3. Go to **Settings → Pages**.
+4. Under **Build and deployment**, choose:
+   - Source: **Deploy from a branch**
+   - Branch: **main**
+   - Folder: **/** root
+5. Save. GitHub Pages usually publishes within a few minutes.
 
-## How to publish on GitHub Pages
+## Updating content
 
-1. Upload all files and folders to the repository root.
-2. Keep `.nojekyll` in place.
-3. In GitHub, go to Settings → Pages.
-4. Select the branch and root folder.
-5. Save and wait for Pages to deploy.
+- Edit page text directly in the corresponding `.html` file.
+- Replace people photos in `assets/images/` and update the image path in `people.html`.
+- Add publications as new `<article class="publication-card">` blocks in `publications.html`.
+- Keep source notes in `SOURCE_NOTES.md` updated when a title, role, or publication changes.
 
-## Easy edits
+## Design choices
 
-- Update lab members in `people.html`.
-- Add confirmed papers in `publications.html`.
-- Adjust colors in the `:root` section of `style.css`.
-- Replace placeholder avatars by adding real photos to `assets/` and changing the image paths in `people.html`.
+- No lab logo is used.
+- No third-party frameworks or remote fonts are required.
+- The site is responsive and should work on GitHub Pages without a build step.
+- The layout is intended for the whole lab, not a single member.

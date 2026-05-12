@@ -1,19 +1,27 @@
-const toggle = document.querySelector('[data-menu-toggle]');
-const nav = document.querySelector('[data-site-nav]');
+(function () {
+  const navToggle = document.querySelector('.nav-toggle');
+  const siteNav = document.querySelector('.site-nav');
+  if (navToggle && siteNav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
 
-if (toggle && nav) {
-  toggle.addEventListener('click', () => {
-    const open = nav.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', String(open));
+  const year = document.querySelector('[data-current-year]');
+  if (year) year.textContent = String(new Date().getFullYear());
+
+  const buttons = document.querySelectorAll('[data-filter]');
+  const items = document.querySelectorAll('[data-topic]');
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      buttons.forEach((b) => b.classList.remove('active'));
+      button.classList.add('active');
+      items.forEach((item) => {
+        const topics = (item.getAttribute('data-topic') || '').split(' ');
+        item.hidden = filter !== 'all' && !topics.includes(filter);
+      });
+    });
   });
-}
-
-const current = window.location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.site-nav a').forEach((link) => {
-  const href = link.getAttribute('href');
-  if (href === current) link.setAttribute('aria-current', 'page');
-});
-
-document.querySelectorAll('[data-year]').forEach((node) => {
-  node.textContent = new Date().getFullYear();
-});
+})();

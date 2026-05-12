@@ -4,81 +4,88 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Tang Lab</title>
-  <meta name="description" content="Contact information for the Tang Laboratory at Howard University College of Medicine.">
+  <meta name="description" content="Contact information for Tang Lab at Howard University College of Medicine.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
-<body class="page-contact">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Tang Lab homepage">
+        <strong>Tang Lab</strong>
+        <span>Howard University College of Medicine</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+      <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header class="site-header" data-header>
-  <a class="site-name" href="index.html" aria-label="Tang Lab home">
-    <span class="site-name-main">Tang Lab</span>
-    <span class="site-name-sub">Howard University College of Medicine</span>
-  </a>
-  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>Menu</button>
-  <nav class="site-nav" data-site-nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="people.html">People</a>
-    <a href="publications.html">Publications</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-
-<section class="page-title">
-  <p class="eyebrow">Contact</p>
-  <h1>Contact the Tang Laboratory.</h1>
-  <p class="lead narrow">
-    For research inquiries, collaboration questions, or training opportunities, contact the laboratory through the Department of Microbiology.
-  </p>
-</section>
-
-<section class="contact-layout">
-  <div class="contact-card">
-    <h2>Laboratory contact</h2>
-    <dl class="contact-list">
-      <div>
-        <dt>Principal investigator</dt>
-        <dd>Qiyi Tang, Ph.D., M.D.</dd>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Contact Tang Lab</h1>
+        <p class="lede">For research inquiries, collaborations, or training opportunities, contact the lab through the Department of Microbiology at Howard University College of Medicine.</p>
       </div>
-      <div>
-        <dt>Email</dt>
-        <dd><a href="mailto:qiyi.tang@howard.edu">qiyi.tang@howard.edu</a></dd>
-      </div>
-      <div>
-        <dt>Phone</dt>
-        <dd><a href="tel:+12028063915">(202) 806-3915</a></dd>
-      </div>
-      <div>
-        <dt>Department</dt>
-        <dd>Department of Microbiology, Howard University College of Medicine</dd>
-      </div>
-      <div>
-        <dt>Location</dt>
-        <dd>Washington, DC, USA</dd>
-      </div>
-    </dl>
-  </div>
+    </section>
 
-  <aside class="contact-side">
-    <h2>Research areas</h2>
-    <p>ZIKV, DENV, HCV, HCMV, viral metabolism, organoid models, and host-pathogen mechanisms.</p>
-    <a class="button secondary" href="research.html">View research</a>
-  </aside>
-</section>
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="card">
+          <div class="info-row">
+            <strong>Principal Investigator</strong>
+            <span>Qiyi Tang, Ph.D., M.D.</span>
+          </div>
+          <div class="info-row">
+            <strong>Department</strong>
+            <span>Department of Microbiology, Howard University College of Medicine</span>
+          </div>
+          <div class="info-row">
+            <strong>Email</strong>
+            <a href="mailto:qiyi.tang@howard.edu">qiyi.tang@howard.edu</a>
+          </div>
+          <div class="info-row">
+            <strong>Phone</strong>
+            <a href="tel:+12028063915">202-806-3915</a>
+          </div>
+          <div class="info-row">
+            <strong>Address</strong>
+            <span>520 W Street NW, Washington, DC 20059</span>
+          </div>
+        </div>
+        <div class="placeholder-map" aria-label="Howard University College of Medicine location information">
+          <div>
+            <p class="eyebrow">Washington, DC</p>
+            <h2>Howard University College of Medicine</h2>
+            <p>Static GitHub Pages version. Add an embedded campus map only if the lab wants a third-party map dependency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-</main>
-
-<footer class="site-footer">
-  <div>
-    <strong>Tang Lab</strong><br>
-    Department of Microbiology, Howard University College of Medicine
-  </div>
-  <div class="footer-meta">
-    <span>Washington, DC</span>
-    <span>© <span data-year></span> Tang Lab</span>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Tang Lab</strong>
+        <p>Department of Microbiology, Howard University College of Medicine</p>
+        <p class="small">© <span data-current-year></span> Tang Lab. Static site prepared for GitHub Pages.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

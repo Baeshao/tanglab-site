@@ -4,88 +4,142 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publications | Tang Lab</title>
-  <meta name="description" content="Publication links and active manuscript areas from the Tang Laboratory.">
+  <meta name="description" content="Selected publications from Tang Lab research areas.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
-<body class="page-publications">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Tang Lab homepage">
+        <strong>Tang Lab</strong>
+        <span>Howard University College of Medicine</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+      <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html" aria-current="page">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header class="site-header" data-header>
-  <a class="site-name" href="index.html" aria-label="Tang Lab home">
-    <span class="site-name-main">Tang Lab</span>
-    <span class="site-name-sub">Howard University College of Medicine</span>
-  </a>
-  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>Menu</button>
-  <nav class="site-nav" data-site-nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="people.html">People</a>
-    <a href="publications.html">Publications</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Publications</p>
+        <h1>Selected publications</h1>
+        <p class="lede">This page lists selected publications connected to Tang Lab research areas. It is not intended to replace complete publication profiles.</p>
+      </div>
+    </section>
 
-<section class="page-title">
-  <p class="eyebrow">Publications</p>
-  <h1>Selected work and research outputs.</h1>
-  <p class="lead narrow">
-    This page avoids placeholder citations. Add full references only after confirming the exact article title,
-    journal, year, author order, and DOI.
-  </p>
-</section>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Full lists</p>
+          <h2>External publication profiles</h2>
+          <p class="lede">For complete and automatically indexed lists, use Google Scholar, PubMed, and ResearchGate.</p>
+          <div class="actions">
+            <a class="button primary" href="https://scholar.google.com/citations?hl=en&user=xFoAj7cAAAAJ">Qiyi Tang Google Scholar</a>
+            <a class="button secondary" href="https://pubmed.ncbi.nlm.nih.gov/?term=Qiyi+Tang+Howard+University">PubMed search</a>
+            <a class="button secondary" href="https://www.researchgate.net/profile/Qiyi-Tang">ResearchGate</a>
+          </div>
+        </div>
 
-<section class="publication-block">
-  <div class="section-heading">
-    <p class="section-kicker">Profiles</p>
-    <h2>Publication records</h2>
-  </div>
-  <div class="publication-card featured-publication">
-    <h3>Qiyi Tang laboratory publications</h3>
-    <p>
-      For the most complete and current publication record, use the laboratory's Google Scholar profile.
-    </p>
-    <a class="text-link" href="https://scholar.google.com/citations?user=Vx9FjCgAAAAJ" target="_blank" rel="noopener">Open Google Scholar</a>
-  </div>
-</section>
+        <div class="filter-bar" aria-label="Filter publications by topic">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="flavivirus">Flavivirus</button>
+          <button class="filter-button" type="button" data-filter="innate">Innate defense</button>
+          <button class="filter-button" type="button" data-filter="cmv">CMV / Herpesvirus</button>
+          <button class="filter-button" type="button" data-filter="models">Models</button>
+        </div>
 
-<section class="publication-block">
-  <div class="section-heading">
-    <p class="section-kicker">In preparation</p>
-    <h2>Manuscripts and active projects</h2>
-  </div>
-  <div class="pub-list">
-    <article class="publication-card">
-      <span class="pub-status">Manuscript in preparation</span>
-      <h3>Zika virus infection, lipid droplet remodeling, and cardiomyocyte dysfunction</h3>
-      <p>Work examining ZIKV infection in cardiomyocyte and cardiac organoid systems.</p>
-    </article>
-    <article class="publication-card">
-      <span class="pub-status">Manuscript in preparation</span>
-      <h3>Zika virus-induced lipid droplet depletion and fatty acid-linked host metabolism</h3>
-      <p>Work examining lipid droplet-associated pathways, lipase activation, and infection-linked metabolic remodeling.</p>
-    </article>
-  </div>
-</section>
+        <div class="publication-list">
+          <article class="publication-card" data-topic="flavivirus innate">
+            <h3>Flavivirus-Induced ER Stress and Unfolded Protein Response: A Central Hub Linking Lipid Droplet Remodeling and Viral Replication</h3>
+            <p class="citation">Muhammad I, Craft K, Pei S, Cruz-Cosme R, Tang Q. <em>Viruses</em>. 2026.</p>
+            <p>Review connecting ER stress, unfolded protein response pathways, lipid-droplet remodeling, and flavivirus replication.</p>
+            <div class="publication-links"><a href="https://www.mdpi.com/1999-4915/18/5/493">Journal page</a></div>
+          </article>
 
-<section class="note-box">
-  <h2>How to add a confirmed publication</h2>
-  <p>
-    Use the format: Authors. Year. Title. Journal. Volume(issue):pages. DOI. Keeping this page conservative prevents the website from displaying inaccurate citations.
-  </p>
-</section>
+          <article class="publication-card" data-topic="flavivirus models">
+            <h3>Zika virus infection in neonatal mice disrupts connexin 43 and induces cardiac inflammation, implicating viral myocarditis in neonatal pathogenesis</h3>
+            <p class="citation">Li S, Hou W, Armstrong N, Zhao H, Cruz-Cosme R, et al. <em>Journal of Virology</em>. 2025;99(9):e0087125.</p>
+            <p>Study reporting cardiac inflammation, conduction abnormalities, and connexin 43 disruption in neonatal ZIKV infection.</p>
+            <div class="publication-links"><a href="https://pubmed.ncbi.nlm.nih.gov/40762502/">PubMed</a></div>
+          </article>
 
-</main>
+          <article class="publication-card" data-topic="innate">
+            <h3>Chasing Virus Replication and Infection: PAMP-PRR Interaction Drives Type I Interferon Production, Which in Turn Activates ISG Expression and ISGylation</h3>
+            <p class="citation">Muhammad I, Contes K, Bility MT, Tang Q. <em>Viruses</em>. 2025;17(4):528.</p>
+            <p>Review of viral PAMP recognition, PRR signaling, type I interferon activation, ISG expression, and ISGylation.</p>
+            <div class="publication-links"><a href="https://www.mdpi.com/1999-4915/17/4/528">Journal page</a></div>
+          </article>
 
-<footer class="site-footer">
-  <div>
-    <strong>Tang Lab</strong><br>
-    Department of Microbiology, Howard University College of Medicine
-  </div>
-  <div class="footer-meta">
-    <span>Washington, DC</span>
-    <span>© <span data-year></span> Tang Lab</span>
-  </div>
-</footer>
-<script src="script.js"></script>
+          <article class="publication-card" data-topic="cmv models">
+            <h3>Can Humanized Immune System Mouse and Rat Models Accelerate the Development of Cytomegalovirus-Based Vaccines Against Infectious Diseases and Cancers?</h3>
+            <p class="citation">Craft K, Amanor A, Barnett I, Donaldson C, Anegon I, Madduri S, Tang Q, Bility MT. <em>International Journal of Molecular Sciences</em>. 2025;26(7):3082.</p>
+            <p>Review of humanized immune-system rodent models and their potential use in CMV-based vaccine development.</p>
+            <div class="publication-links"><a href="https://www.mdpi.com/1422-0067/26/7/3082">Journal page</a></div>
+          </article>
+
+          <article class="publication-card" data-topic="flavivirus">
+            <h3>Lipid Droplets: Formation, Degradation, and Their Role in Cellular Responses to Flavivirus Infections</h3>
+            <p class="citation">Hsia JZ, Liu D, Haynes L, Cruz-Cosme R, Tang Q. <em>Microorganisms</em>. 2024;12(4):647.</p>
+            <p>Review of lipid-droplet formation, degradation, and the role of lipid droplets in flavivirus infection biology.</p>
+            <div class="publication-links"><a href="https://www.mdpi.com/2076-2607/12/4/647">Journal page</a></div>
+          </article>
+
+          <article class="publication-card" data-topic="flavivirus">
+            <h3>Syncytial and Congregative Effects of Dengue and Zika Viruses on the Aedes Albopictus Cell Line Differ among the Viral Strains</h3>
+            <p class="citation">Liu D, Obwolo LA, Cruz-Cosme R, Tang Q. <em>Microorganisms</em>. 2023.</p>
+            <p>Study comparing cytopathic effects of dengue and Zika virus strains in mosquito cells.</p>
+            <div class="publication-links"><a href="https://pubmed.ncbi.nlm.nih.gov/38050490/">PubMed</a></div>
+          </article>
+
+          <article class="publication-card" data-topic="flavivirus models">
+            <h3>Zika Virus Infection Downregulates Connexin 43, Disrupts the Cardiomyocyte Gap Junctions and Induces Heart Diseases in A129 Mice</h3>
+            <p class="citation">Li S, Armstrong N, Zhao H, Cruz-Cosme R, et al. <em>Journal of Virology</em>. 2022.</p>
+            <p>Study connecting ZIKV infection with connexin 43 downregulation, cardiomyocyte gap-junction disruption, and cardiac disease features in mice.</p>
+            <div class="publication-links"><a href="https://pubmed.ncbi.nlm.nih.gov/36226984/">PubMed</a></div>
+          </article>
+
+          <article class="publication-card" data-topic="flavivirus">
+            <h3>Molecular cloning and characterization of the genes encoding the proteins of Zika virus</h3>
+            <p class="citation">Hou W, Cruz-Cosme R, Armstrong N, Obwolo LA, Wen F, Hu W, Luo M-H, Tang Q. <em>Gene</em>. 2017;628:117–128.</p>
+            <p>Characterization of ZIKV protein features and subcellular localization using tagged protein-expression systems.</p>
+            <div class="publication-links"><a href="https://pubmed.ncbi.nlm.nih.gov/28720531/">PubMed</a></div>
+          </article>
+
+          <article class="publication-card" data-topic="cmv">
+            <h3>Expression of Human Cytomegalovirus IE1 Leads to Accumulation of Mono-SUMOylated PML That Is Protected from Degradation by Herpes Simplex Virus 1 ICP0</h3>
+            <p class="citation">Hou W, Cruz-Cosme R, Wen F, Ahn J-H, Reeves I, Luo M-H, Tang Q. <em>Journal of Virology</em>. 2018.</p>
+            <p>Study of CMV IE1, PML/ND10 biology, and interactions with herpesvirus intrinsic-defense mechanisms.</p>
+            <div class="publication-links"><a href="https://pubmed.ncbi.nlm.nih.gov/30258013/">PubMed</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Tang Lab</strong>
+        <p>Department of Microbiology, Howard University College of Medicine</p>
+        <p class="small">© <span data-current-year></span> Tang Lab. Static site prepared for GitHub Pages.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
