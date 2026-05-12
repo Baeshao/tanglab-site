@@ -1,31 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Tang Lab</title>
+  <meta name="description" content="Contact information for the Tang Laboratory at Howard University College of Medicine.">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>TANG LAB</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<body class="page-contact">
 
-  <section>
-    <h2>Contact</h2>
-    <p><strong>Location:</strong> Department of Microbiology, Howard University College of Medicine, Washington, DC, USA</p>
-    <p><strong>Email:</strong> qiyi.tang@howard.edu</p>
-    <p><strong>Phone:</strong> (202) 806-3915</p>
-  </section>
+<header class="site-header" data-header>
+  <a class="site-name" href="index.html" aria-label="Tang Lab home">
+    <span class="site-name-main">Tang Lab</span>
+    <span class="site-name-sub">Howard University College of Medicine</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>Menu</button>
+  <nav class="site-nav" data-site-nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
 
-  <footer>
-    <p>© 2025 Tang Lab</p>
-  </footer>
+<section class="page-title">
+  <p class="eyebrow">Contact</p>
+  <h1>Contact the Tang Laboratory.</h1>
+  <p class="lead narrow">
+    For research inquiries, collaboration questions, or training opportunities, contact the laboratory through the Department of Microbiology.
+  </p>
+</section>
+
+<section class="contact-layout">
+  <div class="contact-card">
+    <h2>Laboratory contact</h2>
+    <dl class="contact-list">
+      <div>
+        <dt>Principal investigator</dt>
+        <dd>Qiyi Tang, Ph.D., M.D.</dd>
+      </div>
+      <div>
+        <dt>Email</dt>
+        <dd><a href="mailto:qiyi.tang@howard.edu">qiyi.tang@howard.edu</a></dd>
+      </div>
+      <div>
+        <dt>Phone</dt>
+        <dd><a href="tel:+12028063915">(202) 806-3915</a></dd>
+      </div>
+      <div>
+        <dt>Department</dt>
+        <dd>Department of Microbiology, Howard University College of Medicine</dd>
+      </div>
+      <div>
+        <dt>Location</dt>
+        <dd>Washington, DC, USA</dd>
+      </div>
+    </dl>
+  </div>
+
+  <aside class="contact-side">
+    <h2>Research areas</h2>
+    <p>ZIKV, DENV, HCV, HCMV, viral metabolism, organoid models, and host-pathogen mechanisms.</p>
+    <a class="button secondary" href="research.html">View research</a>
+  </aside>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div>
+    <strong>Tang Lab</strong><br>
+    Department of Microbiology, Howard University College of Medicine
+  </div>
+  <div class="footer-meta">
+    <span>Washington, DC</span>
+    <span>© <span data-year></span> Tang Lab</span>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

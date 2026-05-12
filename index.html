@@ -1,53 +1,118 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tang Lab</title>
-  <link rel="stylesheet" href="style.css?v=4">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tang Lab | Howard University College of Medicine</title>
+  <meta name="description" content="Tang Laboratory at Howard University College of Medicine studies virus-host interactions and viral pathogenesis.">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="page-home">
 
-<body>
-  <header>
-    <div class="logo-title">
-      <img src="tang.jpg" alt="Tang Lab Logo">
-      <h1>TANG LAB</h1>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header class="site-header" data-header>
+  <a class="site-name" href="index.html" aria-label="Tang Lab home">
+    <span class="site-name-main">Tang Lab</span>
+    <span class="site-name-sub">Howard University College of Medicine</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>Menu</button>
+  <nav class="site-nav" data-site-nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
 
-  <section>
-    <h2>About Us</h2>
-    <p>
-      The Tang Laboratory at Howard University College of Medicine investigates the molecular mechanisms
-      that govern virus–host interactions in medically important human viruses. Our research integrates
-      molecular virology, cell biology, and metabolic analysis to understand how pathogens reprogram
-      cellular pathways and to identify novel targets for therapeutic intervention. Current work
-      encompasses Zika virus (ZIKV), Dengue virus (DENV), Hepatitis C virus (HCV), and human
-      cytomegalovirus (HCMV).
+<section class="hero split-hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Molecular virology · host response · viral pathogenesis</p>
+    <h1>Studying how medically important viruses reprogram human cells.</h1>
+    <p class="lead">
+      The Tang Laboratory investigates virus–host interactions using molecular virology, cell biology,
+      metabolic assays, imaging, and organoid-based models. Our work focuses on how viral infection changes
+      cellular pathways and how those mechanisms can reveal new therapeutic targets.
     </p>
-  </section>
+    <div class="button-row">
+      <a class="button primary" href="research.html">Explore research</a>
+      <a class="button secondary" href="people.html">Meet the team</a>
+    </div>
+  </div>
+  <aside class="hero-panel" aria-label="Lab research themes">
+    <div class="stat-card">
+      <span class="stat-label">Research scope</span>
+      <strong>Virus–host mechanisms</strong>
+      <p>Zika virus, dengue virus, hepatitis C virus, and human cytomegalovirus.</p>
+    </div>
+    <div class="keyword-cloud" aria-label="Research keywords">
+      <span>ZIKV</span><span>DENV</span><span>HCV</span><span>HCMV</span>
+      <span>Lipid metabolism</span><span>Calcium signaling</span><span>Organoids</span>
+      <span>Subcellular biology</span>
+    </div>
+  </aside>
+</section>
 
-  <section>
-    <h2>Recent Highlights</h2>
-    <ul>
-      <li>Uses of cardiomyocytes and cardiac organoids for studying ZIKV infection and calcium signaling.</li>
-      <li>Comparative metabolic profiling of ZIKV and DENV infection in human cells.</li>
-      <li>HCV host–pathogen studies identifying novel antiviral target pathways.</li>
-      <li>BAC engineering of HCMV for functional and vector-based applications.</li>
-    </ul>
-  </section>
+<section class="section-grid two-column">
+  <div>
+    <p class="section-kicker">About the laboratory</p>
+    <h2>Mechanistic virology with disease-relevant models</h2>
+  </div>
+  <div>
+    <p>
+      Our research combines classical virology with modern cell and organoid systems to define how viruses
+      alter host metabolism, organelle function, immune signaling, and cell physiology. The laboratory works
+      across flaviviruses, hepatitis C virus, and human cytomegalovirus to understand shared and virus-specific
+      mechanisms of pathogenesis.
+    </p>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Tang Lab | Howard University College of Medicine</p>
-  </footer>
+<section class="card-section">
+  <div class="section-heading">
+    <p class="section-kicker">Current directions</p>
+    <h2>Research highlights</h2>
+  </div>
+  <div class="cards three-cards">
+    <article class="card">
+      <h3>Zika virus and cardiac models</h3>
+      <p>Using cardiomyocytes and cardiac organoids to study ZIKV infection, lipid droplet remodeling, and calcium signaling.</p>
+    </article>
+    <article class="card">
+      <h3>Viral control of metabolism</h3>
+      <p>Profiling how viral infection changes lipid handling, organelle communication, and energy-linked host pathways.</p>
+    </article>
+    <article class="card">
+      <h3>Antiviral and vector strategies</h3>
+      <p>Applying molecular cloning, BAC engineering, and host-pathogen assays to investigate viral replication and therapeutic potential.</p>
+    </article>
+  </div>
+</section>
+
+<section class="callout">
+  <div>
+    <p class="section-kicker">Training environment</p>
+    <h2>A focused laboratory for graduate research in virology</h2>
+    <p>
+      The lab supports projects that connect molecular mechanisms to disease-relevant phenotypes, with an emphasis on careful experimental design,
+      reproducible assays, and clear biological interpretation.
+    </p>
+  </div>
+  <a class="button secondary" href="contact.html">Contact the lab</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div>
+    <strong>Tang Lab</strong><br>
+    Department of Microbiology, Howard University College of Medicine
+  </div>
+  <div class="footer-meta">
+    <span>Washington, DC</span>
+    <span>© <span data-year></span> Tang Lab</span>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
-

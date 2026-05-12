@@ -1,76 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>People | Tang Lab</title>
+  <meta name="description" content="Members of the Tang Laboratory at Howard University College of Medicine.">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>TANG LAB</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<body class="page-people">
 
-  <section>
-    <h2>People</h2>
+<header class="site-header" data-header>
+  <a class="site-name" href="index.html" aria-label="Tang Lab home">
+    <span class="site-name-main">Tang Lab</span>
+    <span class="site-name-sub">Howard University College of Medicine</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>Menu</button>
+  <nav class="site-nav" data-site-nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
 
-    <div class="person">
-      <img src="qiyi.jpg" alt="Qiyi Tang">
-      <div>
-        <h3>Qiyi Tang, Ph.D., M.D.</h3>
-        <p>Full Professor in the Department of Microbiology, Howard University College of Medicine. Leads research on virus-host interactions, gene regulation, and antiviral vector development.</p>
-      </div>
+<section class="page-title">
+  <p class="eyebrow">People</p>
+  <h1>Members of the Tang Laboratory.</h1>
+  <p class="lead narrow">
+    The lab brings together trainees and collaborators working on molecular virology, host response biology,
+    viral metabolism, and disease-relevant cell models.
+  </p>
+</section>
+
+<section class="people-grid" aria-label="Tang Lab people">
+
+  <article class="person-card">
+    <img src="assets/avatar-qiyi.svg" alt="Qiyi Tang, Ph.D., M.D." loading="lazy">
+    <div class="person-body">
+      <p class="person-role">Principal Investigator</p>
+      <h2>Qiyi Tang, Ph.D., M.D.</h2>
+      <p>Professor, Department of Microbiology, Howard University College of Medicine. Leads research on virus–host interactions, viral gene regulation, and antiviral/vector development.</p>
     </div>
+  </article>
 
-    <div class="person">
-      <img src="ruth.jpg" alt="Ruth Cruz">
-      <div>
-        <h3>Ruth S. Cruz-Cosme</h3>
-        <p>Lab Manager. Expert in molecular biology and cell culture, supporting virology and host-pathogen projects.</p>
-      </div>
+  <article class="person-card">
+    <img src="assets/avatar-ruth.svg" alt="Ruth S. Cruz-Cosme" loading="lazy">
+    <div class="person-body">
+      <p class="person-role">Lab Manager</p>
+      <h2>Ruth S. Cruz-Cosme</h2>
+      <p>Supports virology, molecular biology, and cell culture projects across the laboratory, with major contributions to flavivirus-related research.</p>
     </div>
+  </article>
 
-    <div class="person">
-      <img src="najealicka.jpg" alt="Najealicka Armstrong">
-      <div>
-        <h3>Najealicka Armstrong, Ph.D.</h3>
-        <p>Assistant Professor and collaborator with the Tang Lab. Her research focuses on viral immunology and host response pathways, integrating molecular virology and immune signaling to understand how infection shapes disease outcomes.</p>
-      </div>
+  <article class="person-card">
+    <img src="assets/avatar-najealicka.svg" alt="Najealicka Armstrong, Ph.D." loading="lazy">
+    <div class="person-body">
+      <p class="person-role">Assistant Professor and Collaborator</p>
+      <h2>Najealicka Armstrong, Ph.D.</h2>
+      <p>Collaborates with the Tang Lab on viral immunology, host response pathways, and infection-associated disease mechanisms.</p>
     </div>
+  </article>
 
-    <div class="person">
-      <img src="imaan.jpg" alt="Imaan Muhammad">
-      <div>
-        <h3>Imaan Muhammad</h3>
-        <p>PhD Candidate in Microbiology. Studies viral immune evasion and host responses in mammalian cell systems.</p>
-      </div>
+  <article class="person-card">
+    <img src="assets/imaan.jpg" alt="Imaan Muhammad" loading="lazy">
+    <div class="person-body">
+      <p class="person-role">Ph.D. Candidate, Microbiology</p>
+      <h2>Imaan Muhammad</h2>
+      <p>Studies host responses and viral immune evasion in mammalian cell systems, with a focus on hepatitis C virus-related mechanisms.</p>
     </div>
+  </article>
 
-    <div class="person">
-      <img src="kaci,jpg" alt="Kaci Craft">
-      <div>
-        <h3>Kaci Craft</h3>
-        <p>PhD Candidate in Microbiology. Graduate Researcher. Works on molecular mechanisms of viral replication and protein-protein interactions.</p>
-      </div>
+  <article class="person-card">
+    <img src="assets/avatar-kaci.svg" alt="Kaci Craft" loading="lazy">
+    <div class="person-body">
+      <p class="person-role">Ph.D. Candidate, Microbiology</p>
+      <h2>Kaci Craft</h2>
+      <p>Investigates molecular mechanisms of viral replication, host-pathogen interactions, and viral protein-associated processes.</p>
     </div>
+  </article>
 
-    <div class="person">
-      <img src="shaokai.jpg">
-      <div>
-        <h3>Shaokai Pei</h3>
-        <p>PhD Student in Biomedical Sciences. Investigates ZIKV-driven cellular reprogramming using 2D- and 3D-cardiac models.</p>
-      </div>
+  <article class="person-card">
+    <img src="assets/shaokai.jpg" alt="Shaokai Pei" loading="lazy">
+    <div class="person-body">
+      <p class="person-role">Ph.D. Student, Biomedical Sciences</p>
+      <h2>Shaokai Pei</h2>
+      <p>Investigates ZIKV-driven cellular reprogramming using two-dimensional cardiomyocyte cultures and three-dimensional cardiac models.</p>
     </div>
-  </section>
+  </article>
+</section>
 
-  <footer>
-    <p>© 2025 Tang Lab</p>
-  </footer>
+<section class="note-box">
+  <h2>Photo and profile updates</h2>
+  <p>
+    Placeholder portraits are used where formal headshots were not provided. Titles and descriptions can be revised as lab roles change.
+  </p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div>
+    <strong>Tang Lab</strong><br>
+    Department of Microbiology, Howard University College of Medicine
+  </div>
+  <div class="footer-meta">
+    <span>Washington, DC</span>
+    <span>© <span data-year></span> Tang Lab</span>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

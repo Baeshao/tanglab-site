@@ -1,49 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Tang Lab</title>
-  <link rel="stylesheet" href="style.css?v=4">
+  <meta name="description" content="Research areas in the Tang Laboratory including ZIKV, DENV, HCV, HCMV, metabolism, calcium signaling, and organoid models.">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="page-research">
 
-<body>
-  <header>
-    <div class="logo-title">
-      <img src="tang.jpg" alt="Tang Lab Logo">
-      <h1>TANG LAB</h1>
+<header class="site-header" data-header>
+  <a class="site-name" href="index.html" aria-label="Tang Lab home">
+    <span class="site-name-main">Tang Lab</span>
+    <span class="site-name-sub">Howard University College of Medicine</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>Menu</button>
+  <nav class="site-nav" data-site-nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+
+<section class="page-title">
+  <p class="eyebrow">Research</p>
+  <h1>Virus–host interactions across molecular, cellular, and organoid systems.</h1>
+  <p class="lead narrow">
+    The lab studies how viral infection changes host pathways that control metabolism, signaling, replication,
+    and cellular stress responses.
+  </p>
+</section>
+
+<section class="research-list">
+  <article class="research-item">
+    <span class="research-number">01</span>
+    <div>
+      <h2>Zika virus biology</h2>
+      <p>
+        Zika virus (ZIKV) projects examine how infection alters lipid metabolism, lipid droplet biology,
+        calcium signaling, and cellular function in two-dimensional cardiomyocyte cultures and three-dimensional cardiac organoid models.
+      </p>
+      <ul class="compact-list">
+        <li>Cardiomyocyte infection and host-cell remodeling</li>
+        <li>Lipid droplet depletion and fatty acid-linked pathways</li>
+        <li>Calcium imaging and organoid-level phenotypes</li>
+      </ul>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  </article>
 
-  <section>
-    <h2>Research Areas</h2>
-    <ul>
-      <li><strong>Zika virus (ZIKV):</strong> molecular mechanisms of infection, lipid and calcium pathway modulation, and organoid model development (Ruth S. Cruz-Cosme & Shaokai Pei).</li>
-      <li><strong>Dengue virus (DENV):</strong> replication dynamics and comparative host responses to ZIKV (Kaci Craft).</li>
-      <li><strong>Hepatitis C virus (HCV):</strong> host–pathogen interactions, viral replication control, and antiviral drug evaluation (Imaan Muhammad).</li>
-      <li><strong>Human cytomegalovirus (HCMV):</strong> BAC engineering, viral gene regulation, and vector development for mechanistic studies (Dr. Tang & team).</li>
-      <li><strong>Shared themes:</strong> lipid metabolism, organelle communication, and host defense mechanisms as common determinants of viral pathogenesis.</li>
-    </ul>
-  </section>
+  <article class="research-item">
+    <span class="research-number">02</span>
+    <div>
+      <h2>Dengue virus and flavivirus comparison</h2>
+      <p>
+        Dengue virus (DENV) studies provide a comparative framework for understanding flavivirus replication,
+        host metabolic adaptation, and cellular responses that may overlap with or differ from ZIKV infection.
+      </p>
+    </div>
+  </article>
 
-  <section>
-    <h2>Methodological Approaches</h2>
-    <p>
-      The lab employs an integrative toolkit including molecular cloning, quantitative PCR, viral BAC manipulation,
-      immunofluorescence, subcellular fractionation, and organoid modeling. Metabolic assays and calcium imaging
-      are used to dissect host responses to viral infection at subcellular and systems levels.
-    </p>
-  </section>
+  <article class="research-item">
+    <span class="research-number">03</span>
+    <div>
+      <h2>Hepatitis C virus host-pathogen studies</h2>
+      <p>
+        Hepatitis C virus (HCV) projects focus on viral replication control, host response pathways, immune evasion,
+        and antiviral drug evaluation in mammalian cell systems.
+      </p>
+    </div>
+  </article>
 
-  <footer>
-    <p>© 2025 Tang Lab | Howard University College of Medicine</p>
-  </footer>
+  <article class="research-item">
+    <span class="research-number">04</span>
+    <div>
+      <h2>Human cytomegalovirus engineering</h2>
+      <p>
+        Human cytomegalovirus (HCMV) work includes bacterial artificial chromosome (BAC)-based viral engineering,
+        viral gene regulation, and vector-oriented applications for mechanistic and translational studies.
+      </p>
+    </div>
+  </article>
+</section>
+
+<section class="card-section">
+  <div class="section-heading">
+    <p class="section-kicker">Approaches</p>
+    <h2>Methods used in the lab</h2>
+  </div>
+  <div class="method-grid">
+    <span>Cell culture</span>
+    <span>Organoid models</span>
+    <span>Quantitative PCR</span>
+    <span>Western blotting</span>
+    <span>Immunofluorescence</span>
+    <span>Subcellular fractionation</span>
+    <span>Metabolic assays</span>
+    <span>Calcium imaging</span>
+    <span>BAC manipulation</span>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div>
+    <strong>Tang Lab</strong><br>
+    Department of Microbiology, Howard University College of Medicine
+  </div>
+  <div class="footer-meta">
+    <span>Washington, DC</span>
+    <span>© <span data-year></span> Tang Lab</span>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
