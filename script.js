@@ -2,29 +2,35 @@
   const brandStyle = document.createElement('style');
   brandStyle.textContent = `
     .brand {
-      min-height: 52px;
-      padding-left: 68px;
+      min-height: 60px;
+      padding-left: 76px;
     }
     .brand::before {
-      width: 56px;
-      height: 56px;
-      background-image: url("assets/logo/tang-lab-logo.png");
+      width: 60px;
+      height: 60px;
+      background-image: url("assets/logo/tang-lab-logo-transparent.png");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
     }
     @media (max-width: 760px) {
       .brand {
-        padding-left: 54px;
-        min-height: 44px;
+        padding-left: 60px;
+        min-height: 48px;
       }
       .brand::before {
-        width: 44px;
-        height: 44px;
+        width: 48px;
+        height: 48px;
       }
     }
   `;
   document.head.appendChild(brandStyle);
+
+  const favicon = document.querySelector('link[rel~="icon"]');
+  if (favicon) {
+    favicon.href = 'assets/logo/tang-lab-favicon.png';
+    favicon.type = 'image/png';
+  }
 
   const navToggle = document.querySelector('.nav-toggle');
   const siteNav = document.querySelector('.site-nav');
