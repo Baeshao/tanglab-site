@@ -1,0 +1,23 @@
+/* Logo overrides: use the approved uploaded Tang Lab logo directly. */
+.brand {
+  min-height: 58px;
+  padding-left: 72px;
+}
+
+.brand::before {
+  width: 56px;
+  height: 56px;
+  background-image: url("assets/logo/tang-lab-logo.png");
+}
+
+@media (max-width: 760px) {
+  .brand {
+    min-height: 48px;
+    padding-left: 58px;
+  }
+
+  .brand::before {
+    width: 44px;
+    height: 44px;
+  }
+}
