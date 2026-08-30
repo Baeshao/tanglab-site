@@ -161,9 +161,9 @@ p { margin: 0 0 16px; }
 
 .hero {
   background:
-    radial-gradient(circle at 15% 15%, rgba(213, 163, 109, 0.20), transparent 34%),
-    radial-gradient(circle at 85% 15%, rgba(66, 102, 99, 0.13), transparent 35%),
-    linear-gradient(135deg, #fff 0%, #f0ece6 100%);
+    radial-gradient(circle at 15% 15%, rgba(213, 163, 109, 0.18), transparent 34%),
+    radial-gradient(circle at 85% 15%, rgba(66, 102, 99, 0.14), transparent 35%),
+    linear-gradient(135deg, #fffdf9 0%, #eee9e3 100%);
   border-bottom: 1px solid var(--line);
 }
 .hero-inner {
@@ -230,7 +230,7 @@ p { margin: 0 0 16px; }
   border: 1px solid transparent;
 }
 .button.primary { background: var(--navy); color: white; }
-.button.primary:hover { background: var(--navy-2); color: white; }
+.button.primary:hover { background: #40344a; color: white; }
 .button.secondary { background: var(--surface); color: var(--navy); border-color: var(--line); }
 .button.secondary:hover { border-color: var(--accent-2); color: var(--accent); }
 
@@ -281,8 +281,8 @@ p { margin: 0 0 16px; }
   border-bottom: 6px solid var(--accent);
 }
 .page-hero .container { padding-top: 68px; padding-bottom: 54px; }
-.page-hero .eyebrow, .page-hero .lede { color: #ead9cc; }
-.page-hero .eyebrow::before { background: #ead9cc; }
+.page-hero .eyebrow, .page-hero .lede { color: #eadbcf; }
+.page-hero .eyebrow::before { background: #d5a36d; }
 
 .research-program {
   display: grid;
@@ -308,10 +308,14 @@ p { margin: 0 0 16px; }
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 275px));
+  gap: 22px;
+  justify-content: start;
+  align-items: stretch;
 }
 .person-card {
+  width: 100%;
+  max-width: 275px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -322,23 +326,30 @@ p { margin: 0 0 16px; }
 }
 .person-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center 20%;
   background: var(--surface-soft);
 }
-.person-body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
+.person-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .person-body h3 { margin-bottom: 4px; }
-.role { color: var(--accent); font-weight: 800; font-size: 0.85rem; margin-bottom: 12px; }
+.person-body p { font-size: 0.9rem; line-height: 1.58; }
+.role { color: var(--accent); font-weight: 800; font-size: 0.84rem; margin-bottom: 10px; }
 .person-links {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: auto;
-  padding-top: 14px;
+  padding-top: 12px;
 }
 .person-links a {
   font-weight: 800;
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   text-decoration: none;
   color: var(--navy-2);
 }
@@ -387,7 +398,7 @@ p { margin: 0 0 16px; }
 .filter-button.active {
   border-color: var(--accent-2);
   color: var(--accent);
-  background: #fbf6f1;
+  background: #fbf2e9;
 }
 .publication-list { display: grid; gap: 16px; }
 .publication-card {
@@ -416,25 +427,32 @@ p { margin: 0 0 16px; }
   min-height: 320px;
   border-radius: var(--radius);
   background:
-    linear-gradient(135deg, rgba(50, 40, 58, 0.92), rgba(50, 40, 58, 0.78)),
-    repeating-linear-gradient(45deg, transparent 0 14px, rgba(255,255,255,0.06) 14px 28px);
+    linear-gradient(180deg, rgba(50, 40, 58, 0.08) 10%, rgba(50, 40, 58, 0.82) 100%),
+    url("https://medicine.howard.edu/sites/medicine.howard.edu/files/styles/large/public/2022-07/Trouth1_optimized.jpg?itok=P00v0bSF") center / cover no-repeat;
   color: white;
   padding: 26px;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(42, 34, 48, 0.08);
 }
-.placeholder-map p { color: #ead9cc; }
+.placeholder-map h2 { max-width: 520px; }
+.placeholder-map p { color: #f4eee8; max-width: 560px; }
+.placeholder-map .button.secondary {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(255, 255, 255, 0.8);
+}
 
 .notice {
   border-left: 4px solid var(--accent);
-  background: #fbf6f1;
-  color: #5e4b3b;
+  background: #fbf2e9;
+  color: #5b4737;
   padding: 16px 18px;
   border-radius: 12px;
 }
 
 .site-footer {
-  background: #251f2b;
+  background: #2a2230;
   color: white;
   margin-top: 40px;
 }
@@ -447,8 +465,8 @@ p { margin: 0 0 16px; }
   gap: 24px;
   align-items: start;
 }
-.site-footer a { color: #ead9cc; }
-.site-footer p { color: #d5cfd8; margin-bottom: 8px; }
+.site-footer a { color: #e6c39f; }
+.site-footer p { color: #d3ccd5; margin-bottom: 8px; }
 .footer-links { display: flex; gap: 14px; flex-wrap: wrap; justify-content: flex-end; }
 
 @media (max-width: 900px) {
@@ -457,7 +475,6 @@ p { margin: 0 0 16px; }
   .grid.three,
   .grid.four,
   .research-program,
-  .people-grid,
   .contact-layout,
   .footer-inner { grid-template-columns: 1fr; }
   .hero-inner { padding-top: 56px; }
@@ -489,6 +506,8 @@ p { margin: 0 0 16px; }
   .section { padding: 46px 0; }
   .page-hero .container { padding-top: 48px; padding-bottom: 42px; }
   .hero-inner { gap: 32px; }
+  .people-grid { grid-template-columns: 1fr; }
+  .person-card { max-width: 360px; }
   .person-card img { aspect-ratio: 4 / 3; }
 }
 
