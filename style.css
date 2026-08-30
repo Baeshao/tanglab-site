@@ -1,5 +1,5 @@
 /* Tang Lab website — static GitHub Pages build
-   No external frameworks, no remote fonts, no logo dependency. */
+   No external frameworks or remote fonts; local vector tiger mark. */
 
 :root {
   --bg: #f6f3ee;
@@ -74,12 +74,26 @@ button:focus-visible {
   gap: 18px;
 }
 .brand {
+  position: relative;
   display: inline-flex;
   flex-direction: column;
+  justify-content: center;
   gap: 0;
   text-decoration: none;
   color: var(--ink);
   min-width: 230px;
+  min-height: 34px;
+  padding-left: 40px;
+}
+.brand::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  background: url("assets/tiger-mark.svg") center / contain no-repeat;
 }
 .brand strong {
   font-size: 1rem;
@@ -284,6 +298,33 @@ p { margin: 0 0 16px; }
 .page-hero .eyebrow, .page-hero .lede { color: #eadbcf; }
 .page-hero .eyebrow::before { background: #d5a36d; }
 
+.research-jump-wrap {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.research-jump {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.research-jump > span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.research-jump a {
+  color: var(--navy-2);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.research-jump a:hover { color: var(--accent); }
+
 .research-program {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
@@ -382,6 +423,11 @@ p { margin: 0 0 16px; }
 }
 .alumni-card p:last-child { margin-bottom: 0; }
 
+.publication-note {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: -2px 0 18px;
+}
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -414,6 +460,7 @@ p { margin: 0 0 16px; }
 }
 .publication-card h3 { font-size: 1.03rem; margin-bottom: 8px; }
 .citation { color: var(--muted); margin-bottom: 10px; font-size: 0.91rem; }
+.citation strong { color: var(--ink); font-weight: 800; }
 .publication-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
 .publication-links a { font-weight: 800; font-size: 0.85rem; text-decoration: none; }
 
@@ -519,7 +566,8 @@ p { margin: 0 0 16px; }
   }
   .site-nav.open { display: flex; }
   .site-nav a { border-radius: 10px; }
-  .brand { min-width: 0; }
+  .brand { min-width: 0; padding-left: 36px; }
+  .brand::before { width: 27px; height: 27px; }
   .brand strong { font-size: 0.94rem; }
   .brand span { font-size: 0.74rem; }
   .section { padding: 46px 0; }
@@ -528,6 +576,8 @@ p { margin: 0 0 16px; }
   .people-grid { grid-template-columns: 1fr; }
   .person-card { max-width: 360px; }
   .person-card img { aspect-ratio: 4 / 3; }
+  .research-jump { gap: 6px 13px; padding-top: 13px; padding-bottom: 13px; }
+  .research-jump > span { width: 100%; }
   .location-photo-caption {
     align-items: flex-start;
     flex-direction: column;
