@@ -8,7 +8,7 @@
     .brand::before {
       width: 60px;
       height: 60px;
-      background-image: url("assets/logo/tang-lab-logo-transparent.png");
+      background-image: url("assets/logo/tang-lab-logo.png");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 
   const favicon = document.querySelector('link[rel~="icon"]');
   if (favicon) {
-    favicon.href = 'assets/logo/tang-lab-logo-transparent.png';
+    favicon.href = 'assets/logo/tang-lab-favicon.png';
     favicon.type = 'image/png';
   }
 
