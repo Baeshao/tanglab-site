@@ -1,37 +1,4 @@
 (function () {
-  const brandStyle = document.createElement('style');
-  brandStyle.textContent = `
-    .brand {
-      min-height: 72px;
-      padding-left: 88px;
-    }
-    .brand::before {
-      width: 72px;
-      height: 72px;
-      background-image: url("assets/logo/tang-lab-logo.png");
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-    @media (max-width: 760px) {
-      .brand {
-        padding-left: 66px;
-        min-height: 54px;
-      }
-      .brand::before {
-        width: 54px;
-        height: 54px;
-      }
-    }
-  `;
-  document.head.appendChild(brandStyle);
-
-  const favicon = document.querySelector('link[rel~="icon"]');
-  if (favicon) {
-    favicon.href = 'assets/logo/tang-lab-favicon.png';
-    favicon.type = 'image/png';
-  }
-
   const navToggle = document.querySelector('.nav-toggle');
   const siteNav = document.querySelector('.site-nav');
 
