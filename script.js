@@ -2,12 +2,12 @@
   const brandStyle = document.createElement('style');
   brandStyle.textContent = `
     .brand {
-      min-height: 60px;
-      padding-left: 76px;
+      min-height: 72px;
+      padding-left: 88px;
     }
     .brand::before {
-      width: 60px;
-      height: 60px;
+      width: 72px;
+      height: 72px;
       background-image: url("assets/logo/tang-lab-logo.png");
       background-position: center;
       background-size: contain;
@@ -15,12 +15,12 @@
     }
     @media (max-width: 760px) {
       .brand {
-        padding-left: 60px;
-        min-height: 48px;
+        padding-left: 66px;
+        min-height: 54px;
       }
       .brand::before {
-        width: 48px;
-        height: 48px;
+        width: 54px;
+        height: 54px;
       }
     }
   `;
