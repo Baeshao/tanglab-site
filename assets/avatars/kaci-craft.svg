@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="KC initials placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="KC initials placeholder">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4a3b2a"/>
-      <stop offset="1" stop-color="#111827"/>
+      <stop offset="0" stop-color="#32283a"/>
+      <stop offset="1" stop-color="#426663"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="600" rx="38" fill="url(#g)"/>
-  <circle cx="300" cy="300" r="190" fill="none" stroke="#d7a35a" stroke-width="14" opacity="0.9"/>
-  <text x="50%" y="52%" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="150" font-weight="700" fill="#fff8ed" letter-spacing="8">KC</text>
+  <rect width="800" height="600" rx="30" fill="url(#g)"/>
+  <circle cx="400" cy="300" r="122" fill="rgba(255,255,255,0.035)" stroke="#b8753c" stroke-width="10"/>
+  <text x="400" y="308" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#fffaf5" letter-spacing="4">KC</text>
 </svg>

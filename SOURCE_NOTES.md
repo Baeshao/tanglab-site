@@ -1,23 +1,24 @@
 # Public source notes
 
-These notes document the public sources used to draft the current website content. They are included so future lab members can verify and update titles, roles, external profile links, and selected publications.
+These notes document public sources used to draft and maintain website content. They are retained for internal verification of titles, roles, external profile links, and selected publications.
 
 ## Lab and PI
 
 - Howard University profile for Qiyi Tang: https://profiles.howard.edu/qiyi-tang
-- Google Scholar profile identified in public search results: https://scholar.google.com/citations?hl=en&user=xFoAj7cAAAAJ
-- ResearchGate profile for Qiyi Tang: https://www.researchgate.net/profile/Qiyi-Tang
+- Google Scholar: https://scholar.google.com/citations?hl=en&user=xFoAj7cAAAAJ
+- ResearchGate: https://www.researchgate.net/profile/Qiyi-Tang
 
 ## People
 
 - Ruth Cruz-Cosme appears in Tang group information on the Howard profile and in Tang Lab publications.
 - Najealicka Armstrong public profile: https://smdp.icpdprograms.org/profile/?id=458
-- Imaan Muhammad LinkedIn profile/search result: https://www.linkedin.com/in/imaan-muhammad
-- Kaci Craft ResearchGate profile: https://www.researchgate.net/profile/Kaci-Craft
-- Shaokai Pei ResearchGate profile: https://www.researchgate.net/profile/Shaokai-Pei
+- Imaan Muhammad LinkedIn: https://www.linkedin.com/in/imaan-muhammad
+- Kaci Craft ResearchGate: https://www.researchgate.net/profile/Kaci-Craft
+- Shaokai Pei ResearchGate: https://www.researchgate.net/profile/Shaokai-Pei
 
 ## Selected publications
 
+- AMPK-Orchestrated Metabolic Reprogramming in Some Flavivirus Infections: https://www.mdpi.com/1999-4915/18/8/910
 - Flavivirus-Induced ER Stress and Unfolded Protein Response: https://www.mdpi.com/1999-4915/18/5/493
 - Zika virus infection in neonatal mice disrupts connexin 43 and induces cardiac inflammation: https://pubmed.ncbi.nlm.nih.gov/40762502/
 - Chasing Virus Replication and Infection: https://www.mdpi.com/1999-4915/17/4/528
@@ -28,6 +29,6 @@ These notes document the public sources used to draft the current website conten
 - ZIKV protein gene cloning and characterization: https://pubmed.ncbi.nlm.nih.gov/28720531/
 - HCMV IE1 and mono-SUMOylated PML: https://pubmed.ncbi.nlm.nih.gov/30258013/
 
-## Maintenance caution
+## Pre-publication verification items
 
-Some public profiles are indexed from third-party pages and may lag behind official lab membership. The People page should be reviewed by Dr. Tang or the lab before final publication.
+Before the site becomes an official public lab webpage, confirm current titles and affiliations for every person directly with the lab. Third-party profiles may lag behind changes in lab membership or academic status. Alumni names and affiliations should also be checked against lab records because several have limited searchable public profiles.
