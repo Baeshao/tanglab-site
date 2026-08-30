@@ -331,6 +331,11 @@ p { margin: 0 0 16px; }
   object-position: center 20%;
   background: var(--surface-soft);
 }
+.person-card img[src$=".svg"] {
+  object-fit: contain;
+  object-position: center;
+  padding: 16px;
+}
 .person-body {
   padding: 18px;
   display: flex;
@@ -416,6 +421,7 @@ p { margin: 0 0 16px; }
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 24px;
+  align-items: start;
 }
 .info-row {
   padding: 18px 0;
@@ -423,25 +429,38 @@ p { margin: 0 0 16px; }
 }
 .info-row:first-child { border-top: 0; padding-top: 0; }
 .info-row strong { display: block; color: var(--navy); margin-bottom: 4px; }
-.placeholder-map {
-  min-height: 320px;
+.location-photo-card {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
-  background:
-    linear-gradient(180deg, rgba(50, 40, 58, 0.08) 10%, rgba(50, 40, 58, 0.82) 100%),
-    url("https://medicine.howard.edu/sites/medicine.howard.edu/files/styles/large/public/2022-07/Trouth1_optimized.jpg?itok=P00v0bSF") center / cover no-repeat;
-  color: white;
-  padding: 26px;
-  display: flex;
-  align-items: flex-end;
   overflow: hidden;
   box-shadow: 0 10px 28px rgba(42, 34, 48, 0.08);
 }
-.placeholder-map h2 { max-width: 520px; }
-.placeholder-map p { color: #f4eee8; max-width: 560px; }
-.placeholder-map .button.secondary {
-  background: rgba(255, 255, 255, 0.94);
-  border-color: rgba(255, 255, 255, 0.8);
+.location-photo-card > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #e9e4dc;
 }
+.location-photo-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px;
+}
+.location-photo-caption strong {
+  display: block;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+.location-photo-caption span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.location-photo-caption .button { flex: 0 0 auto; }
 
 .notice {
   border-left: 4px solid var(--accent);
@@ -509,6 +528,10 @@ p { margin: 0 0 16px; }
   .people-grid { grid-template-columns: 1fr; }
   .person-card { max-width: 360px; }
   .person-card img { aspect-ratio: 4 / 3; }
+  .location-photo-caption {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
