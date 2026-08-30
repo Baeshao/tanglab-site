@@ -1,5 +1,5 @@
 /* Tang Lab website — static GitHub Pages build
-   No external frameworks or remote fonts; local vector tiger mark. */
+   No external frameworks or remote fonts. */
 
 :root {
   --bg: #f6f3ee;
@@ -81,19 +81,19 @@ button:focus-visible {
   gap: 0;
   text-decoration: none;
   color: var(--ink);
-  min-width: 230px;
-  min-height: 34px;
-  padding-left: 40px;
+  min-width: 260px;
+  min-height: 84px;
+  padding-left: 100px;
 }
 .brand::before {
   content: "";
   position: absolute;
   left: 0;
   top: 50%;
-  width: 30px;
-  height: 30px;
+  width: 84px;
+  height: 84px;
   transform: translateY(-50%);
-  background: url("assets/tiger-mark.svg") center / contain no-repeat;
+  background: url("assets/logo/tang-lab-logo.png") center / 145% no-repeat;
 }
 .brand strong {
   font-size: 1rem;
@@ -552,7 +552,7 @@ p { margin: 0 0 16px; }
   .nav-toggle { display: inline-flex; }
   .site-nav {
     position: absolute;
-    top: 72px;
+    top: 92px;
     left: 14px;
     right: 14px;
     display: none;
@@ -566,8 +566,8 @@ p { margin: 0 0 16px; }
   }
   .site-nav.open { display: flex; }
   .site-nav a { border-radius: 10px; }
-  .brand { min-width: 0; padding-left: 36px; }
-  .brand::before { width: 27px; height: 27px; }
+  .brand { min-width: 0; min-height: 64px; padding-left: 76px; }
+  .brand::before { width: 64px; height: 64px; background-size: 145%; }
   .brand strong { font-size: 0.94rem; }
   .brand span { font-size: 0.74rem; }
   .section { padding: 46px 0; }
