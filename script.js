@@ -1,4 +1,28 @@
 (function () {
+  const logoSizeStyle = document.createElement('style');
+  logoSizeStyle.textContent = `
+    .brand {
+      min-height: 72px;
+      padding-left: 86px;
+    }
+    .brand::before {
+      width: 72px;
+      height: 72px;
+      background-size: 145%;
+    }
+    @media (max-width: 760px) {
+      .brand {
+        padding-left: 58px;
+        min-height: 48px;
+      }
+      .brand::before {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  `;
+  document.head.appendChild(logoSizeStyle);
+
   const navToggle = document.querySelector('.nav-toggle');
   const siteNav = document.querySelector('.site-nav');
 
