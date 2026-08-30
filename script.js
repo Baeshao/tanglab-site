@@ -28,7 +28,7 @@
 
   const favicon = document.querySelector('link[rel~="icon"]');
   if (favicon) {
-    favicon.href = 'assets/logo/tang-lab-favicon.png';
+    favicon.href = 'assets/logo/tang-lab-logo-transparent.png';
     favicon.type = 'image/png';
   }
 
