@@ -1,4 +1,31 @@
 (function () {
+  const brandStyle = document.createElement('style');
+  brandStyle.textContent = `
+    .brand {
+      min-height: 52px;
+      padding-left: 68px;
+    }
+    .brand::before {
+      width: 56px;
+      height: 56px;
+      background-image: url("assets/logo/tang-lab-logo.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    @media (max-width: 760px) {
+      .brand {
+        padding-left: 54px;
+        min-height: 44px;
+      }
+      .brand::before {
+        width: 44px;
+        height: 44px;
+      }
+    }
+  `;
+  document.head.appendChild(brandStyle);
+
   const navToggle = document.querySelector('.nav-toggle');
   const siteNav = document.querySelector('.site-nav');
 
