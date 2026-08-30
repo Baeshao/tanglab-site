@@ -1,9 +1,5 @@
 # Tang Lab logo assets
 
-Upload the approved Tang Lab logo files to this folder.
-
-Recommended filenames:
-- `tang-lab-logo.png` for a transparent PNG
-- `tang-lab-logo.svg` for a vector version, if available
-
-The website will not switch to a file in this folder until the approved logo is uploaded and the site reference is updated.
+- `tang-lab-logo.png` — original uploaded logo.
+- `tang-lab-logo-transparent.png` — transparent-background tiger logo used in the site header.
+- `tang-lab-favicon.png` — tiger icon used in the browser tab.
