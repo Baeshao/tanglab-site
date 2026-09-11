@@ -2,22 +2,22 @@
   const logoSizeStyle = document.createElement('style');
   logoSizeStyle.textContent = `
     .brand {
-      min-height: 58px;
-      padding-left: 70px;
+      min-height: 64px;
+      padding-left: 78px;
     }
     .brand::before {
-      width: 58px;
-      height: 58px;
+      width: 64px;
+      height: 64px;
       background-size: 145%;
     }
     @media (max-width: 760px) {
       .brand {
-        padding-left: 50px;
-        min-height: 42px;
+        padding-left: 54px;
+        min-height: 44px;
       }
       .brand::before {
-        width: 42px;
-        height: 42px;
+        width: 44px;
+        height: 44px;
       }
     }
   `;
@@ -25,7 +25,7 @@
 
   const favicon = document.querySelector('link[rel~="icon"]');
   if (favicon) {
-    favicon.href = 'assets/favicon.svg?v=20260910b';
+    favicon.href = 'assets/favicon.svg?v=20260910c';
     favicon.type = 'image/svg+xml';
   }
 
