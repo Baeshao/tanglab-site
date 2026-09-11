@@ -2,26 +2,33 @@
   const logoSizeStyle = document.createElement('style');
   logoSizeStyle.textContent = `
     .brand {
-      min-height: 72px;
-      padding-left: 86px;
+      min-height: 64px;
+      padding-left: 78px;
     }
     .brand::before {
-      width: 72px;
-      height: 72px;
+      width: 64px;
+      height: 64px;
       background-size: 145%;
     }
     @media (max-width: 760px) {
       .brand {
-        padding-left: 58px;
-        min-height: 48px;
+        padding-left: 54px;
+        min-height: 44px;
       }
       .brand::before {
-        width: 48px;
-        height: 48px;
+        width: 44px;
+        height: 44px;
       }
     }
   `;
   document.head.appendChild(logoSizeStyle);
+
+  const favicon = document.querySelector('link[rel~="icon"]');
+  if (favicon) {
+    favicon.href = 'assets/logo/tang-lab-logo.png?v=20260910';
+    favicon.type = 'image/png';
+    favicon.setAttribute('sizes', 'any');
+  }
 
   const navToggle = document.querySelector('.nav-toggle');
   const siteNav = document.querySelector('.site-nav');
