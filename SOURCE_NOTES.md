@@ -1,6 +1,6 @@
 # Public source notes
 
-These notes document public sources used to draft and maintain website content. They are retained for internal verification of titles, roles, external profile links, and selected publications.
+These notes document public sources used to draft and maintain website content. They are retained for internal verification of titles, roles, external profile links, research areas, and selected publications.
 
 ## Lab and PI
 
@@ -15,6 +15,7 @@ These notes document public sources used to draft and maintain website content. 
 - Imaan Muhammad LinkedIn: https://www.linkedin.com/in/imaan-muhammad
 - Kaci Craft ResearchGate: https://www.researchgate.net/profile/Kaci-Craft
 - Shaokai Pei ResearchGate: https://www.researchgate.net/profile/Shaokai-Pei
+- Paola Correa-Alfonzo spelling is supported by Howard-associated public sources. Recent public sources describe her as a Research Assistant in the Department of Anatomy; the website's Tang Lab alumni entry records her historical rotation role and should be confirmed internally if an exact historical title is required.
 
 ## Selected publications
 
@@ -29,6 +30,12 @@ These notes document public sources used to draft and maintain website content. 
 - ZIKV protein gene cloning and characterization: https://pubmed.ncbi.nlm.nih.gov/28720531/
 - HCMV IE1 and mono-SUMOylated PML: https://pubmed.ncbi.nlm.nih.gov/30258013/
 
+## Preprints
+
+- Hepatitis C Virus Remodels Lipid Droplets to Promote Mitochondrial Fatty Acid Accumulation and Metabolic Activation: https://pubmed.ncbi.nlm.nih.gov/42465489/
+  - bioRxiv preprint, 2026; not peer reviewed at the time of this note.
+  - DOI: 10.64898/2026.07.09.737644
+
 ## Pre-publication verification items
 
-Before the site becomes an official public lab webpage, confirm current titles and affiliations for every person directly with the lab. Third-party profiles may lag behind changes in lab membership or academic status. Alumni names and affiliations should also be checked against lab records because several have limited searchable public profiles.
+Before the site becomes an official public lab webpage, confirm current titles and affiliations for every person directly with the lab. Third-party profiles may lag behind changes in lab membership or academic status. Historical alumni roles should also be checked against lab records when exact titles are important.
