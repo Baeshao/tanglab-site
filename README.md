@@ -1,6 +1,6 @@
 # Tang Lab Website
 
-Static website package for the Tang Laboratory at Howard University College of Medicine.
+Static website for the Tang Laboratory at Howard University College of Medicine.
 
 ## Files
 
@@ -16,32 +16,34 @@ script.js
 .nojekyll
 assets/
   favicon.svg
+  logo/
   avatars/
   images/
 SOURCE_NOTES.md
 ```
 
-## GitHub Pages upload
+## GitHub Pages
 
-1. Create or open the GitHub repository for the lab website.
-2. Upload all files and folders in this package to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, choose:
+1. Open the repository settings.
+2. Go to **Settings → Pages**.
+3. Under **Build and deployment**, choose:
    - Source: **Deploy from a branch**
    - Branch: **main**
    - Folder: **/** root
-5. Save. GitHub Pages usually publishes within a few minutes.
+4. Save.
 
 ## Updating content
 
 - Edit page text directly in the corresponding `.html` file.
-- Replace people photos in `assets/images/` and update the image path in `people.html`.
-- Add publications as new `<article class="publication-card">` blocks in `publications.html`.
-- Keep source notes in `SOURCE_NOTES.md` updated when a title, role, or publication changes.
+- Replace people photos in `assets/images/` and update paths in `people.html` when needed.
+- Add selected publications as `<article class="publication-card">` blocks in `publications.html`.
+- Clearly label preprints as not peer reviewed.
+- Keep source notes in `SOURCE_NOTES.md` updated when a title, role, research area, or publication changes.
 
 ## Design choices
 
-- No lab logo is used.
+- The approved Tang Lab tiger logo is stored in `assets/logo/` and styled through `style.css`.
+- The favicon is defined by `assets/favicon.svg`.
 - No third-party frameworks or remote fonts are required.
-- The site is responsive and should work on GitHub Pages without a build step.
+- The site is responsive and works on GitHub Pages without a build step.
 - The layout is intended for the whole lab, not a single member.
