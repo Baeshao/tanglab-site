@@ -1,34 +1,4 @@
 (function () {
-  const logoSizeStyle = document.createElement('style');
-  logoSizeStyle.textContent = `
-    .brand {
-      min-height: 64px;
-      padding-left: 78px;
-    }
-    .brand::before {
-      width: 64px;
-      height: 64px;
-      background-size: 145%;
-    }
-    @media (max-width: 760px) {
-      .brand {
-        padding-left: 54px;
-        min-height: 44px;
-      }
-      .brand::before {
-        width: 44px;
-        height: 44px;
-      }
-    }
-  `;
-  document.head.appendChild(logoSizeStyle);
-
-  const favicon = document.querySelector('link[rel~="icon"]');
-  if (favicon) {
-    favicon.href = 'assets/favicon.svg?v=20260910c';
-    favicon.type = 'image/svg+xml';
-  }
-
   const navToggle = document.querySelector('.nav-toggle');
   const siteNav = document.querySelector('.site-nav');
 
