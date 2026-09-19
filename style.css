@@ -75,7 +75,6 @@ button:focus-visible {
   gap: 18px;
 }
 .brand {
-  position: relative;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -83,19 +82,8 @@ button:focus-visible {
   text-decoration: none;
   color: var(--ink);
   min-width: 260px;
-  min-height: 64px;
-  padding-left: 78px;
 }
-.brand::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 64px;
-  height: 64px;
-  transform: translateY(-50%);
-  background: url("assets/logo/tang-lab-logo.png") center / 145% no-repeat;
-}
+.brand::before { display: none; }
 .brand strong {
   font-size: 1rem;
   letter-spacing: 0.055em;
@@ -539,7 +527,18 @@ p { margin: 0 0 16px; }
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 24px;
-  align-items: start;
+  align-items: center;
+}
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer-logo {
+  width: 74px;
+  height: 74px;
+  flex: 0 0 74px;
+  object-fit: contain;
 }
 .site-footer a { color: #e6c39f; }
 .site-footer p { color: #d3ccd5; margin-bottom: 8px; }
@@ -555,6 +554,8 @@ p { margin: 0 0 16px; }
   .footer-inner { grid-template-columns: 1fr; }
   .hero-inner { padding-top: 56px; }
   .footer-links { justify-content: flex-start; }
+  .footer-brand { align-items: flex-start; }
+  .footer-logo { width: 64px; height: 64px; flex-basis: 64px; }
 }
 
 @media (max-width: 760px) {
@@ -576,8 +577,7 @@ p { margin: 0 0 16px; }
   }
   .site-nav.open { display: flex; }
   .site-nav a { border-radius: 10px; }
-  .brand { min-width: 0; min-height: 44px; padding-left: 54px; }
-  .brand::before { width: 44px; height: 44px; background-size: 145%; }
+  .brand { min-width: 0; }
   .brand strong { font-size: 0.94rem; }
   .brand span { font-size: 0.74rem; }
   .section { padding: 46px 0; }
