@@ -338,14 +338,14 @@ p { margin: 0 0 16px; }
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 275px));
+  grid-template-columns: repeat(3, minmax(230px, 320px));
   gap: 22px;
   justify-content: start;
   align-items: stretch;
 }
 .person-card {
   width: 100%;
-  max-width: 275px;
+  max-width: 320px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -557,6 +557,7 @@ p { margin: 0 0 16px; }
   .contact-layout,
   .footer-inner { grid-template-columns: 1fr; }
   .hero-inner { padding-top: 56px; }
+  .people-grid { grid-template-columns: repeat(2, minmax(230px, 320px)); }
   .footer-links { justify-content: flex-start; }
   .footer-brand { align-items: flex-start; }
   .footer-logo { width: 68px; height: 68px; flex-basis: 68px; padding: 5px; border-radius: 14px; }
@@ -588,7 +589,7 @@ p { margin: 0 0 16px; }
   .page-hero .container { padding-top: 48px; padding-bottom: 42px; }
   .hero-inner { gap: 32px; }
   .people-grid { grid-template-columns: 1fr; }
-  .person-card { max-width: 360px; }
+  .person-card { max-width: 320px; }
   .person-card img { aspect-ratio: 4 / 3; }
   .research-jump { gap: 6px 13px; padding-top: 13px; padding-bottom: 13px; }
   .research-jump > span { width: 100%; }
