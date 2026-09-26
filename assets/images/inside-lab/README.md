@@ -1,13 +1,9 @@
 # Inside the lab images
 
-Source files:
+Current website use:
 
-- `experiment.tif` — original experimental image. Keep this TIFF as the scientific source.
+- `experiment.png` — experimental image used as the background of the Home-page introduction/hero.
 - `group.jpg` — original Tang Lab group photo.
+- `group-web.jpg` — optimized copy displayed on the People page.
 
-Browser-ready display copies are generated automatically:
-
-- `experiment-web.png` — used on the Home page because browsers do not reliably display TIFF files.
-- `group-web.jpg` — used on the People page.
-
-Do not delete the original TIFF or group photo.
+The Home page uses the PNG directly. The group photo is shown on the People page above the member profiles.
