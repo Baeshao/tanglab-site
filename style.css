@@ -265,12 +265,12 @@ p { margin: 0 0 16px; }
 }
 .home-media-experiment {
   background-image:
-    url("assets/images/lab-experiment.jpg"),
+    url("assets/images/inside-lab/experiment.jpg"),
     linear-gradient(135deg, #eee9e3 0%, #ddd8d1 100%);
 }
 .home-media-group {
   background-image:
-    url("assets/images/lab-group.jpg"),
+    url("assets/images/inside-lab/group.jpg"),
     linear-gradient(135deg, #f0ece6 0%, #d8d2ca 100%);
 }
 .home-media-card figcaption {
