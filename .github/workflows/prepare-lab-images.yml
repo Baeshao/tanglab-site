@@ -1,0 +1,51 @@
+name: Prepare lab web images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/prepare-lab-images.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: python -m pip install pillow
+      - name: Create browser-ready copies
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageOps
+          from pathlib import Path
+
+          base = Path("assets/images/inside-lab")
+
+          # Preserve the uploaded TIFF as the scientific source.
+          exp = Image.open(base / "experiment.tif")
+          exp.seek(0)
+          try:
+              exp.save(base / "experiment-web.png")
+          except OSError:
+              exp.convert("RGB").save(base / "experiment-web.png")
+
+          # Keep the original group photo and make a lighter web copy.
+          group = ImageOps.exif_transpose(Image.open(base / "group.jpg")).convert("RGB")
+          max_width = 2000
+          if group.width > max_width:
+              new_height = round(group.height * max_width / group.width)
+              group = group.resize((max_width, new_height), Image.Resampling.LANCZOS)
+          group.save(base / "group-web.jpg", quality=88, optimize=True)
+          PY
+      - name: Commit browser-ready copies
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/inside-lab/experiment-web.png assets/images/inside-lab/group-web.jpg
+          git commit -m "Add browser-ready lab images" || exit 0
+          git push
