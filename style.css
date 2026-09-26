@@ -163,9 +163,13 @@ p { margin: 0 0 16px; }
 .small { color: var(--muted); font-size: 0.86rem; }
 
 .hero {
-  background:
-    linear-gradient(90deg, rgba(246, 243, 238, 0.96) 0%, rgba(246, 243, 238, 0.90) 46%, rgba(246, 243, 238, 0.64) 100%),
-    url("assets/images/inside-lab/experiment.png") center / cover no-repeat;
+  background-color: #e9e6e1;
+  background-image:
+    linear-gradient(90deg, rgba(246, 243, 238, 0.84) 0%, rgba(246, 243, 238, 0.68) 46%, rgba(246, 243, 238, 0.34) 100%),
+    url("assets/images/inside-lab/experiment.png");
+  background-position: center, center;
+  background-size: cover, contain;
+  background-repeat: no-repeat;
   border-bottom: 1px solid var(--line);
 }
 .hero-inner {
@@ -178,8 +182,8 @@ p { margin: 0 0 16px; }
   align-items: center;
 }
 .hero-card {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(3px);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   border-radius: 26px;
@@ -377,9 +381,8 @@ p { margin: 0 0 16px; }
 }
 .group-photo-card img {
   width: 100%;
-  max-height: 520px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  object-fit: contain;
 }
 
 .people-grid {
