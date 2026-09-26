@@ -1,8 +1,13 @@
 # Inside the lab images
 
-Upload the two Home-page images to this folder using these exact filenames:
+Source files:
 
-- `experiment.jpg` — experimental/research image from the lab
-- `group.jpg` — Tang Lab group photo
+- `experiment.tif` — original experimental image. Keep this TIFF as the scientific source.
+- `group.jpg` — original Tang Lab group photo.
 
-The Home page is already configured to display these files automatically.
+Browser-ready display copies are generated automatically:
+
+- `experiment-web.png` — used on the Home page because browsers do not reliably display TIFF files.
+- `group-web.jpg` — used on the People page.
+
+Do not delete the original TIFF or group photo.
