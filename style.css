@@ -164,9 +164,8 @@ p { margin: 0 0 16px; }
 
 .hero {
   background:
-    radial-gradient(circle at 15% 15%, rgba(213, 163, 109, 0.18), transparent 34%),
-    radial-gradient(circle at 85% 15%, rgba(66, 102, 99, 0.14), transparent 35%),
-    linear-gradient(135deg, #fffdf9 0%, #eee9e3 100%);
+    linear-gradient(90deg, rgba(246, 243, 238, 0.96) 0%, rgba(246, 243, 238, 0.90) 46%, rgba(246, 243, 238, 0.64) 100%),
+    url("assets/images/inside-lab/experiment.png") center / cover no-repeat;
   border-bottom: 1px solid var(--line);
 }
 .hero-inner {
@@ -179,7 +178,8 @@ p { margin: 0 0 16px; }
   align-items: center;
 }
 .hero-card {
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   border-radius: 26px;
@@ -237,51 +237,6 @@ p { margin: 0 0 16px; }
 .button.secondary { background: var(--surface); color: var(--navy); border-color: var(--line); }
 .button.secondary:hover { border-color: var(--accent-2); color: var(--accent); }
 
-
-.home-visual-section {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-.home-visual-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 20px;
-}
-.home-media-card {
-  margin: 0;
-  overflow: hidden;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: 0 10px 28px rgba(42, 34, 48, 0.055);
-}
-.home-media-image {
-  width: 100%;
-  min-height: 300px;
-  background-color: var(--surface-soft);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.home-media-experiment {
-  background-image:
-    url("assets/images/inside-lab/experiment-web.png"),
-    linear-gradient(135deg, #eee9e3 0%, #ddd8d1 100%);
-}
-.home-media-card figcaption {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 14px 16px;
-}
-.home-media-card figcaption strong {
-  color: var(--navy);
-}
-.home-media-card figcaption span {
-  color: var(--muted);
-  font-size: 0.84rem;
-}
 
 .grid {
   display: grid;
@@ -646,7 +601,6 @@ p { margin: 0 0 16px; }
   .grid.two,
   .grid.three,
   .grid.four,
-  .home-visual-grid,
   .research-program,
   .research-grid,
   .contact-layout,
@@ -683,8 +637,6 @@ p { margin: 0 0 16px; }
   .section { padding: 46px 0; }
   .page-hero .container { padding-top: 48px; padding-bottom: 42px; }
   .hero-inner { gap: 32px; }
-  .home-media-image { min-height: 230px; }
-  .home-media-card figcaption { align-items: flex-start; flex-direction: column; gap: 2px; }
   .people-grid { grid-template-columns: 1fr; }
   .person-card { max-width: 320px; }
   .person-card img { aspect-ratio: 4 / 3; }
