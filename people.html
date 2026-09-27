@@ -131,9 +131,16 @@
         <div class="section-header compact-header">
           <h2>Group photos</h2>
         </div>
-        <figure class="group-photo-card">
-          <img src="assets/images/inside-lab/group-web.jpg" alt="Tang Lab group photo">
-        </figure>
+        <div class="group-photo-gallery" data-gallery-source="assets/images/group-photos/gallery.json">
+          <a class="group-photo-thumb" href="assets/images/inside-lab/group-web.jpg" data-full-image="assets/images/inside-lab/group-web.jpg">
+            <img src="assets/images/inside-lab/group-web.jpg" alt="Tang Lab group photo">
+          </a>
+        </div>
+
+        <dialog class="photo-lightbox" aria-label="Group photo viewer">
+          <button class="photo-lightbox-close" type="button" aria-label="Close photo">×</button>
+          <img src="" alt="Expanded Tang Lab group photo">
+        </dialog>
       </div>
     </section>
 
