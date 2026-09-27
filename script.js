@@ -28,6 +28,62 @@
   const buttons = document.querySelectorAll('[data-filter]');
   const items = document.querySelectorAll('[data-topic]');
 
+
+  const gallery = document.querySelector('.group-photo-gallery[data-gallery-source]');
+  const lightbox = document.querySelector('.photo-lightbox');
+
+  if (gallery && lightbox) {
+    const lightboxImage = lightbox.querySelector('img');
+    const closeButton = lightbox.querySelector('.photo-lightbox-close');
+
+    const bindPhoto = (link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const source = link.getAttribute('data-full-image') || link.getAttribute('href');
+        if (!source || !lightboxImage) return;
+        lightboxImage.src = source;
+        lightbox.showModal();
+      });
+    };
+
+    gallery.querySelectorAll('.group-photo-thumb').forEach(bindPhoto);
+
+    const source = gallery.getAttribute('data-gallery-source');
+    if (source) {
+      fetch(source)
+        .then((response) => response.ok ? response.json() : [])
+        .then((photos) => {
+          if (!Array.isArray(photos) || photos.length === 0) return;
+          gallery.replaceChildren();
+          photos.forEach((photo, index) => {
+            if (!photo || !photo.src) return;
+            const link = document.createElement('a');
+            link.className = 'group-photo-thumb';
+            link.href = photo.src;
+            link.setAttribute('data-full-image', photo.src);
+
+            const img = document.createElement('img');
+            img.src = photo.thumb || photo.src;
+            img.alt = photo.alt || `Tang Lab group photo ${index + 1}`;
+            img.loading = 'lazy';
+
+            link.appendChild(img);
+            gallery.appendChild(link);
+            bindPhoto(link);
+          });
+        })
+        .catch(() => {});
+    }
+
+    if (closeButton) closeButton.addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) lightbox.close();
+    });
+    lightbox.addEventListener('close', () => {
+      if (lightboxImage) lightboxImage.src = '';
+    });
+  }
+
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
       const filter = button.getAttribute('data-filter');
