@@ -181,6 +181,18 @@ p { margin: 0 0 16px; }
   gap: 46px;
   align-items: center;
 }
+.hero-copy {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(221, 216, 209, 0.9);
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 12px 32px rgba(42, 34, 48, 0.08);
+}
+.hero-copy .lede {
+  color: #4f555c;
+}
+
 .hero-card {
   background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(3px);
@@ -372,8 +384,8 @@ p { margin: 0 0 16px; }
   padding-top: 48px;
 }
 .group-photo-card {
-  width: min(100%, 760px);
-  margin: 0 auto 28px;
+  width: min(100%, 680px);
+  margin: 32px auto 0;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--line);
@@ -641,6 +653,7 @@ p { margin: 0 0 16px; }
   .section { padding: 46px 0; }
   .page-hero .container { padding-top: 48px; padding-bottom: 42px; }
   .hero-inner { gap: 32px; }
+  .hero-copy { padding: 22px; }
   .people-grid { grid-template-columns: 1fr; }
   .person-card { max-width: 320px; }
   .person-card img { aspect-ratio: 4 / 3; }
