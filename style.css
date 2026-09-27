@@ -166,9 +166,9 @@ p { margin: 0 0 16px; }
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(246, 243, 238, 0.70) 0%, rgba(246, 243, 238, 0.48) 42%, rgba(246, 243, 238, 0.16) 100%),
+    linear-gradient(90deg, rgba(24, 25, 29, 0.72) 0%, rgba(24, 25, 29, 0.52) 48%, rgba(24, 25, 29, 0.30) 100%),
     url("assets/images/inside-lab/experiment.png") center / cover no-repeat;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 .hero-inner {
   position: relative;
@@ -182,26 +182,21 @@ p { margin: 0 0 16px; }
   align-items: center;
 }
 .hero-copy {
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(3px);
-  border: 1px solid rgba(221, 216, 209, 0.9);
-  border-radius: 22px;
-  padding: 28px;
-  box-shadow: 0 12px 32px rgba(42, 34, 48, 0.08);
+  color: white;
+  max-width: 720px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
 }
-.hero-copy .lede {
-  color: #4f555c;
-}
+.hero-copy .eyebrow { color: #f0cda8; }
+.hero-copy .eyebrow::before { background: #d5a36d; }
+.hero-copy .lede { color: rgba(255, 255, 255, 0.88); }
 
-.hero-card {
-  background: rgba(255, 255, 255, 0.86);
-  backdrop-filter: blur(3px);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  border-radius: 26px;
-  padding: 28px;
+.hero-focus {
+  color: white;
+  padding-left: 18px;
+  border-left: 1px solid rgba(255, 255, 255, 0.34);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.28);
 }
-.hero-card h2 { font-size: 1.18rem; }
+.hero-focus h2 { font-size: 1.18rem; margin-bottom: 10px; }
 .hero-list {
   list-style: none;
   padding: 0;
@@ -209,25 +204,13 @@ p { margin: 0 0 16px; }
 }
 .hero-list li {
   display: grid;
-  grid-template-columns: 20px 1fr;
-  gap: 11px;
-  padding: 14px 0;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.91rem;
+  gap: 2px;
+  padding: 13px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  font-size: 0.9rem;
 }
-.check {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: inline-grid;
-  place-items: center;
-  background: rgba(184, 117, 60, 0.13);
-  color: var(--accent);
-  font-weight: 900;
-  font-size: 0.7rem;
-  margin-top: 2px;
-}
+.hero-list li strong { color: white; font-size: 0.94rem; }
+.hero-list li span { color: rgba(255, 255, 255, 0.78); }
 .hero-actions,
 .actions {
   display: flex;
@@ -252,6 +235,24 @@ p { margin: 0 0 16px; }
 .button.primary:hover { background: #40344a; color: white; }
 .button.secondary { background: var(--surface); color: var(--navy); border-color: var(--line); }
 .button.secondary:hover { border-color: var(--accent-2); color: var(--accent); }
+.hero .button.primary {
+  background: white;
+  color: var(--navy);
+}
+.hero .button.primary:hover {
+  background: #f2ece6;
+  color: var(--navy);
+}
+.hero .button.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+.hero .button.secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: white;
+}
 
 
 .grid {
@@ -261,6 +262,14 @@ p { margin: 0 0 16px; }
 .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.scholarship-item {
+  padding: 18px 0 4px;
+  border-top: 2px solid var(--line);
+}
+.scholarship-item h3 {
+  color: var(--navy);
+  max-width: 30ch;
+}
 .card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -452,10 +461,11 @@ p { margin: 0 0 16px; }
 }
 .person-links a:hover { color: var(--accent); }
 
-/* Alumni section */
-.alumni-section {
-  padding-top: 24px;
-}
+/* People sections */
+.current-members-section { padding-bottom: 48px; }
+.group-photos-section { padding: 6px 0 54px; }
+.group-photos-section .group-photo-card { margin-top: 0; }
+.alumni-section { padding-top: 6px; }
 .alumni-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -653,7 +663,12 @@ p { margin: 0 0 16px; }
   .section { padding: 46px 0; }
   .page-hero .container { padding-top: 48px; padding-bottom: 42px; }
   .hero-inner { gap: 32px; }
-  .hero-copy { padding: 22px; }
+  .hero-focus {
+    padding-left: 0;
+    padding-top: 20px;
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.34);
+  }
   .people-grid { grid-template-columns: 1fr; }
   .person-card { max-width: 320px; }
   .person-card img { aspect-ratio: 4 / 3; }
