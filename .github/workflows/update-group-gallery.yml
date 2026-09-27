@@ -1,0 +1,83 @@
+name: Update group photo gallery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/images/group-photos/**"
+
+permissions:
+  contents: write
+
+jobs:
+  gallery:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: python -m pip install pillow
+
+      - name: Build web images, thumbnails, and gallery manifest
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageOps
+          from pathlib import Path
+          import json
+
+          base = Path("assets/images/group-photos")
+          web = base / "web"
+          thumbs = base / "thumbs"
+          web.mkdir(exist_ok=True)
+          thumbs.mkdir(exist_ok=True)
+
+          supported = {".jpg", ".jpeg", ".png", ".webp"}
+          source_files = sorted(
+              p for p in base.iterdir()
+              if p.is_file()
+              and p.suffix.lower() in supported
+          )
+
+          entries = [{
+              "src": "assets/images/inside-lab/group-web.jpg",
+              "thumb": "assets/images/inside-lab/group-web.jpg",
+              "alt": "Tang Lab group photo"
+          }]
+
+          for source in source_files:
+              image = ImageOps.exif_transpose(Image.open(source)).convert("RGB")
+
+              web_img = image.copy()
+              web_img.thumbnail((2000, 2000), Image.Resampling.LANCZOS)
+              web_path = web / f"{source.stem}.jpg"
+              web_img.save(web_path, quality=88, optimize=True)
+
+              thumb_img = image.copy()
+              thumb_img.thumbnail((520, 520), Image.Resampling.LANCZOS)
+              thumb_path = thumbs / f"{source.stem}.jpg"
+              thumb_img.save(thumb_path, quality=82, optimize=True)
+
+              label = source.stem.replace("-", " ").replace("_", " ").strip()
+              alt = f"Tang Lab group photo — {label}" if label else "Tang Lab group photo"
+
+              entries.append({
+                  "src": web_path.as_posix(),
+                  "thumb": thumb_path.as_posix(),
+                  "alt": alt
+              })
+
+          (base / "gallery.json").write_text(
+              json.dumps(entries, indent=2) + "\n",
+              encoding="utf-8"
+          )
+          PY
+
+      - name: Commit generated gallery files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/group-photos/gallery.json assets/images/group-photos/web assets/images/group-photos/thumbs
+          git commit -m "Update group photo gallery" || exit 0
+          git push
