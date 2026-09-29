@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "assets/images/group-photos/**"
+      - "assets/images/group-photos/originals/**"
 
 permissions:
   contents: write
@@ -27,9 +27,10 @@ jobs:
           from pathlib import Path
           import json
 
-          base = Path("assets/images/group-photos")
-          web = base / "web"
-          thumbs = base / "thumbs"
+          root = Path("assets/images/group-photos")
+          base = root / "originals"
+          web = root / "web"
+          thumbs = root / "thumbs"
           web.mkdir(exist_ok=True)
           thumbs.mkdir(exist_ok=True)
 
@@ -64,7 +65,7 @@ jobs:
                   "alt": alt
               })
 
-          (base / "gallery.json").write_text(
+          (root / "gallery.json").write_text(
               json.dumps(entries, indent=2) + "\n",
               encoding="utf-8"
           )

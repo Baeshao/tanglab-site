@@ -1,22 +1,17 @@
-# Group photos
+# Group photo gallery
 
-Upload future Tang Lab group photos into this folder.
+Upload new source photos to `assets/images/group-photos/originals/`.
 
-Supported source formats:
-- .jpg / .jpeg
-- .png
-- .webp
+Supported formats: JPG, JPEG, PNG, and WebP.
 
-You can upload several files at once. Use simple filenames such as:
-- asv-2026.jpg
-- lab-dinner-2026.jpg
-- group-2027.jpg
+Examples:
+- `asv-2026.jpg`
+- `group-dinner-2026.jpg`
+- `group-2027.jpg`
 
-Do not upload files into the generated `web` or `thumbs` folders.
+After a commit to `main`, GitHub Actions generates:
+- `web/` — optimized full-size website copies
+- `thumbs/` — gallery thumbnails
+- `gallery.json` — gallery manifest used by the People page
 
-After you upload and commit the photos to `main`, GitHub Actions will automatically:
-1. make a smaller web copy,
-2. make a thumbnail,
-3. update `gallery.json`.
-
-The People page reads `gallery.json` automatically, so no HTML editing is needed for new photos.
+Do not manually edit generated files.

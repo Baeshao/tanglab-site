@@ -167,7 +167,7 @@ p { margin: 0 0 16px; }
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(24, 25, 29, 0.72) 0%, rgba(24, 25, 29, 0.52) 48%, rgba(24, 25, 29, 0.30) 100%),
-    url("assets/images/inside-lab/experiment.png") center / cover no-repeat;
+    url("../images/research/home-hero.png") center / cover no-repeat;
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 .hero-inner {
@@ -655,7 +655,7 @@ p { margin: 0 0 16px; }
   flex: 0 0 72px;
   background:
     var(--bg)
-    url("assets/logo/tang-lab-logo.png")
+    url("../branding/tang-lab-logo.png")
     center / 155% no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 14px;
