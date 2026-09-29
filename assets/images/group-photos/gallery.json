@@ -3,5 +3,20 @@
     "src": "assets/images/inside-lab/group-web.jpg",
     "thumb": "assets/images/inside-lab/group-web.jpg",
     "alt": "Tang Lab group photo"
+  },
+  {
+    "src": "assets/images/group-photos/web/asv-2026.jpg",
+    "thumb": "assets/images/group-photos/thumbs/asv-2026.jpg",
+    "alt": "Tang Lab group photo \u2014 asv 2026"
+  },
+  {
+    "src": "assets/images/group-photos/web/group-2026.jpg",
+    "thumb": "assets/images/group-photos/thumbs/group-2026.jpg",
+    "alt": "Tang Lab group photo \u2014 group 2026"
+  },
+  {
+    "src": "assets/images/group-photos/web/group-dinner-2025.jpg",
+    "thumb": "assets/images/group-photos/thumbs/group-dinner-2025.jpg",
+    "alt": "Tang Lab group photo \u2014 group dinner 2025"
   }
 ]
