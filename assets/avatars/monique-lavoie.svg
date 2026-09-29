@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Initials placeholder for Monique Lavoie">
+  <rect width="400" height="300" fill="#f0ece6"/>
+  <circle cx="200" cy="122" r="58" fill="#ddd8d1"/>
+  <path d="M105 272c14-59 51-89 95-89s81 30 95 89" fill="#ddd8d1"/>
+  <text x="200" y="137" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#646b72">ML</text>
+</svg>
