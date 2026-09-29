@@ -40,11 +40,7 @@ jobs:
               and p.suffix.lower() in supported
           )
 
-          entries = [{
-              "src": "assets/images/inside-lab/group-web.jpg",
-              "thumb": "assets/images/inside-lab/group-web.jpg",
-              "alt": "Tang Lab group photo"
-          }]
+          entries = []
 
           for source in source_files:
               image = ImageOps.exif_transpose(Image.open(source)).convert("RGB")
