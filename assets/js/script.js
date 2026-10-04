@@ -25,6 +25,18 @@
   const year = document.querySelector('[data-current-year]');
   if (year) year.textContent = String(new Date().getFullYear());
 
+  document.querySelectorAll('img[data-fallback-src]').forEach((img) => {
+    const useFallback = () => {
+      const fallback = img.getAttribute('data-fallback-src');
+      if (!fallback || img.src.endsWith(fallback)) return;
+      img.src = fallback;
+      img.removeAttribute('data-fallback-src');
+    };
+
+    img.addEventListener('error', useFallback, { once: true });
+    if (img.complete && img.naturalWidth === 0) useFallback();
+  });
+
   const buttons = document.querySelectorAll('[data-filter]');
   const items = document.querySelectorAll('[data-topic]');
 
