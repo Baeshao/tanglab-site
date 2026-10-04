@@ -1,11 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="QT initials placeholder">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#32283a"/>
-      <stop offset="1" stop-color="#426663"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="600" rx="30" fill="url(#g)"/>
-  <circle cx="400" cy="300" r="122" fill="rgba(255,255,255,0.035)" stroke="#b8753c" stroke-width="10"/>
-  <text x="400" y="308" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#fffaf5" letter-spacing="4">QT</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Initials placeholder for Qiyi Tang">
+  <rect width="400" height="300" fill="#f0ece6"/>
+  <circle cx="200" cy="122" r="58" fill="#ddd8d1"/>
+  <path d="M105 272c14-59 51-89 95-89s81 30 95 89" fill="#ddd8d1"/>
+  <text x="200" y="137" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#646b72">QT</text>
 </svg>
